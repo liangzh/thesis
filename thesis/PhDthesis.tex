@@ -1,0 +1,140 @@
+\documentclass[PhD]{uclathes}
+\pdfpagewidth 8.27in
+\pdfpageheight 11.69in
+
+%\includeonly{
+%discussion,summary }
+%\includeonly{
+%abs_ch,abs_en,introduction,facilities,analysis,results,discussion}
+%discussion}
+
+%\newcommand{ \vtwo }{$v_{2}$ }
+\newcommand{ \pt }{$p_{T}$ }
+\newcommand{\pionp}{\pi^{+}}
+\newcommand{\pionn}{\pi^{-}}
+%\newcommand{ \vtwos}{$v_{2}$}
+%\newcommand{ \pts}{$p_T$}
+%\newcommand{ \rar }{\rightarrow}
+%\newcommand{ \lar }{\leftarrow}
+%\newcommand{ \as }{$\alpha_{s}$}
+%\newcommand{ \dAu }{$d$+Au}
+%\newcommand{ \pp }{$p$+$p$ }
+%\newcommand{ \AuAu }{Au+Au}
+\newcommand{ \auau }{Au + Au }
+\newcommand{\pp}{$p + p$}
+%\newcommand{ \CuCu }{Cu+Cu}
+%\newcommand{ \cucu }{Cu+Cu }
+\newcommand{ \sNN }{ \sqrt{s_{NN}} }
+%\newcommand{ \sqrtsNN}{$\sqrt{s_{NN}}$ }
+%\newcommand{ \chg }{$h^{\pm}$ }
+%\newcommand{ \chgs }{$h^{\pm}$}
+%\newcommand{ \ks }{$K_{S}^{0}$}
+%\newcommand{ \lam }{$\Lambda$}
+%\newcommand{ \lbar }{$\bar{\Lambda}$}
+%\newcommand{ \llbar }{$\Lambda + \bar{\Lambda}$}
+%\newcommand{ \cas }{$\Xi$}
+%\newcommand{ \xxi }{$\Xi^- + \overline{\Xi}^+$}
+%\newcommand{ \oom }{$\Omega + \bar{\Omega}$}
+%\newcommand{ \omeg }{$\Omega$}
+%\newcommand{ \vtwotwo }{{v_2\{2\}}}
+%\newcommand{ \vtwofour }{{v_2\{4\}}}
+%\newcommand{ \vtwozdc }{v_2\{\mathrm{ZDC-SMD}\}}
+%\newcommand{ \vtwoEcc} {v_2/\varepsilon}
+%\newcommand{ \density} {1/S\ dN/dy}
+%\newcommand{ \fracHydro} {[\frac{v_{2}}{\varepsilon}]/[\frac{v_{2}}{\varepsilon}]_{\mathrm {hydro}}}
+%\newcommand{ \sigmacs} {\sigma c_s}
+\newcommand{\rmd}{\mathrm{d}}
+\newcommand{\bs}{\boldsymbol}
+\newcommand{\dedx}{\mathrm{d}E/\mathrm{d}x}
+
+%\def \epart {$\varepsilon_{\mathrm{part}}$ }
+%\def \eparts {$\varepsilon_{\mathrm{part}}$}
+%\def \eparttwo {$\varepsilon_{\mathrm{part}}\{2\}$ }
+%\def \eparttwos {$\varepsilon_{\mathrm{part}}\{2\}$}
+%\def \lt {\mbox{$<$} }
+%\def \gt {\mbox{$>$} }
+%\def \npart {$N_{\mathrm{part}}$}
+%\newcommand{\ket}{$m_{T} - m$ }
+%\newcommand{\kets}{$m_{T} - m$}
+%\def \sims   {$\sim$~}
+%\def \GeVc {\mbox{$\mathrm{GeV}/c$}}
+%\def \MeVc {\mbox{$\mathrm{MeV}/c$}}
+\def\newblock{\hskip .11em plus .33em minus .07em}
+\newcommand{\mev}{\mega\electronvolt}
+\newcommand{\gev}{\giga\electronvolt}
+\newcommand{\fm}{\femto\meter}
+\newcommand{\ach}{A_{ch}}
+
+%\usepackage{CJK}
+
+%\usepackage{pinyin}
+\usepackage{longtable}
+\usepackage{amssymb}
+%\usepackage{amsthm}
+%\usepackage{revsymb}
+%\usepackage{rotate}
+\usepackage{epsfig}
+%\usepackage{eepic}
+%\usepackage{epic}
+\usepackage{graphics}
+%\usepackage[center]{caption2}
+%\usepackage{wrapfig}
+%\usepackage{doublespace}
+%\usepackage{multicols}
+%\usepackage{supertabular}
+\usepackage{multirow}
+\usepackage{amsmath}
+\usepackage{mathrsfs}
+\usepackage{MnSymbol}
+%\usepackage{indentfirst}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{comment}
+\usepackage[squaren]{SIunits}
+\usepackage{color}
+\usepackage{subfigure}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue]{hyperref}
+
+%===========================================================================
+\pagestyle{fancy} \rhead{} \chead{}
+\lhead{\includegraphics[height=16mm]{plots/title.pdf}} \rfoot{}
+%\lhead{\includegraphics[height=16mm]{plots/CCNULogo.pdf}} \rfoot{}
+\cfoot{\thepage} \lfoot{}
+\begin{document}
+\ifx\href\undefined\else\hypersetup{linktocpage=true}\fi
+%\begin{CJK*}{GBK}{song}
+
+
+% preliminary page info
+\graphicspath{plots/}
+%\makeintropages
+
+
+%\pagenumbering{}
+
+\tableofcontents
+\listoffigures
+\listoftables
+
+\input{introduction}
+
+
+
+
+%\include{appendix}
+
+
+%\bibliographystyle{hep}
+\bibliographystyle{uclathes}
+\bibliography{paperlib}
+%\bibliographystyle{my-physrev}
+\clearpage
+%
+%\addcontentsline{toc}{chapter}{Presentations and publication List}
+%\include{publications}
+%\addcontentsline{toc}{chapter}{Acknowledges}
+%\include{acknowledge}
+
+
+%\end{CJK*}
+\end{document}

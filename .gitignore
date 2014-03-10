@@ -6,3 +6,4 @@ templates/
 *.lot
 *.toc
 *.out
+*.pdf

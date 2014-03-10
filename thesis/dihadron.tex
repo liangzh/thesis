@@ -1,0 +1,692 @@
+\chapter{Dihadron correlation measurements as a method to study saturation}
+\label{chp:dihadron}
+
+
+\section{Dihadron Correlations in the Saturation Formalism}\label{sec:dihadrontheory}
+
+According to the effective small-$x$ $k_t$ factorization established in
+Ref.~\cite{Dominguez:2011wm}, which is briefly summarized above, the
+back-to-back correlation limit of the dihadron production cross section can be used
+to directly probe the WW gluon distribution $xG^{(1)}(x,q_{\perp})$. As a
+comparison, the hadron production in semi-inclusive deep inelastic scattering
+(SIDIS), as shown in Ref.~\cite{Marquet:2009ca}, is related to the so-called
+dipole gluon distributions $xG^{(2)}(x,q_{\perp})$.
+
+The coincidence probability $C(\Delta\phi)=\frac{N_{pair}(\Delta\phi)}{N_{trig}}$ is a
+commonly exploited observable in dihadron correlation studies, in which
+$N_{pair}(\Delta\phi)$ is the yield of the correlated trigger and associate
+particle pairs, while $N_{trig}$ is the trigger particle yield. This
+correlation function $C(\Delta\phi)$ depends on the azimuthal angle difference $\Delta\phi$
+between the trigger and associate particles. In terms of theoretical
+calculation, the correlation function is defined as
+\begin{eqnarray} 
+C(\Delta\phi) 
+= & \frac{1}{\frac{d\sigma^{\gamma^{*}+A\rightarrow h_{1}+X}_{\textrm{SIDIS}}}{dz_{h1}}}
+\frac{d\sigma^{\gammaA}_{\textrm{tot}}}{dz_{h1}dz_{h2}d\Delta\phi}.
+\label{eqn:cdphiCGC} 
+\end{eqnarray}
+
+Let us consider a process of a virtual photon scattering on a dense nuclear target
+producing two final state back-to-back $q\bar q$ jets:
+$\gamma^{*}+A\rightarrow q(k_{1})+\bar{q}(k_{2})+X$, in which $k_1$ and $k_2$ are
+the four momenta of the two outgoing quarks. This process is the
+dominant one in the low-$x$ region, since the gluon distribution is much larger than
+the quark distributions inside a hadron at high energy. The back-to-back correlation
+limit indicates that the transverse momentum imbalance is much smaller than each
+individual momentum: $q_{\perp}=|k_{1\perp}+k_{2\perp}|\ll P_{\perp}$, with
+$P_{\perp}$ defined as $(k_{1\perp}-k_{2\perp})/2$. At leading order (LO), the
+dihadron total cross section, which includes both the longitudinal and
+transverse contributions, can be written as follows~\cite{Dominguez:2011wm}:
+
+\begin{eqnarray}\label{eqn:xspairCGC}
+\frac{d\sigma^{\gammaA}_{\textrm{tot}}}{\phase} = & C\int^{1-z_{h2}}_{z_{h1}} dz_{q}
+\frac{z_{q}(1-z_{q})}{z^{2}_{h2}z^{2}_{h1}}
+d^{2}p_{1\perp}d^{2}p_{2\perp}\mathcal{F}(x_{g},q_{\perp})
+\mathcal{H}_{\textrm{tot}}(z_{q},k_{1\perp},k_{2\perp}) \\ \nonumber
+& \times \sum_{q}e^{2}_{q}D_{q}(\frac{z_{h1}}{z_{q}},p_{1\perp})
+D_{\bar{q}}(\frac{z_{h2}}{1-z_{q}},p_{2\perp}),
+\end{eqnarray}  
+where $C=\frac{S_{\perp}N_{c}\alpha_{em}}{2\pi^{2}}$ gives the normalization
+factor, with $S_{\perp}$ being the transverse area of the target, $z_{q}$ is the
+longitudinal momentum fraction of the produced quark with respect to the incoming
+virtual photon, $\mathcal{H}_{\textrm{tot}}$ is the combined hard factor,
+$k_{1\perp}$ and $k_{2\perp}$ are the transverse momenta of the two quarks, while
+$p_{h1\perp}$ and $p_{h2\perp}$ are the transverse momenta of the two corresponding
+produced hadrons respectively. $\mathcal{F}(x_{g},q_{\perp})$ comes from the
+relevant WW gluon distribution $xG^{(1)}(x_g,q_\perp)$ evaluated with the gauge
+links for a large nucleus at small $x$ by using the McLerran-Venugopalan
+model~\cite{McLerran:1993ni},
+\begin{equation} 
+\mathcal{F}(x_{g}, q_{\perp}) =
+\frac{1}{2\pi^{2}} \int d^{2}r_{\perp} e^{-iq_{\perp}r_{\perp}}
+\frac{1}{r^{2}_{\perp}}[1-\exp(-\frac{1}{4}r^{2}_{\perp}Q^{2}_{s})],
+\end{equation}
+in which $x_{g}=\frac{z_{q}p_{h1\perp}^2}{z_{h1}^2s}+\frac{(1-z_{q})p_{h2\perp}^2}{z_{h2}^2s}+\frac{Q^2}{s}$ 
+is the longitudinal momentum fraction of the small-$x$ gluon with respect to the target hadron and 
+$Q_{s}$ is the gluon saturation scale. $D_{q}(\frac{z_{h}}{z_{q}},p_{\perp})$ represents the transverse 
+momentum dependent fragmentation functions, where $p_{\perp}$ shows the additional transverse
+momentum introduced by fragmentation processes.
+
+In principle, the so-called linearly polarised gluon
+distribution~\cite{Metz:2011wb,Dominguez:2011br} also contributes to the dihadron
+correlation and can be systematically taken into account. This part of the
+contribution comes from an averaged quantum interference between a scattering
+amplitude and a complex conjugate amplitude with active gluons linearly
+polarized in two orthogonal directions in the azimuthal plane. Numerical
+calculation shows that this contribution is negligible for dihadron back-to-back
+correlations. Also, this type of contribution vanishes when the dihadron correlation function 
+is averaged over the azimuthal angle of the trigger particle. 
+
+
+As to the single-inclusive-hadron production cross section, which enters the
+denominator of the definition of the correlation function $C(\Delta\phi)$, it
+can be calculated from the saturation physics/CGC formalism~\cite{Marquet:2009ca} as
+follows:
+\begin{eqnarray}\label{eqn:xstrigCGC}
+\frac{d\sigma^{\gamma^{*}+A\rightarrow h_{1}+X}_{\textrm{SIDIS}}}{dz_{h1}d^{2}p_{h1\perp}} 
+= & C \int^{1}_{z_{h1}}dz_{q} \int
+d^{2}q_{\perp}F_{x_{g}}(q_{\perp})H_{\textrm{SIDIS}}(k_{\perp},q_{\perp},Q) \\ \nonumber
+  & \times \sum_{q} e^{2}_{q}\frac{z_{q}}{z^{2}_{h1}}D_{q}(\frac{z_{h1}}{z_{q}}),
+\end{eqnarray}
+where $H_{\textrm{SIDIS}}$ is the $q_{\perp}$ dependent hard factor for SIDIS,
+which includes both the longitudinal and transverse photon contribution. Here
+$F_{x_{g}}(q_\perp)$, which is related to $xG^{2}(x_g,q_\perp)$, is the Fourier
+transform of the dipole cross section:
+\begin{eqnarray}
+F_{x_{g}}(q_{\perp})& = &\int \frac{d^{2}r}{2\pi^{2}}e^{iq_{\perp}\cdot
+r_{\perp}} \frac{1}{N_{c}} Tr\langle
+U(r_{\perp})U^{\dag}(0)\rangle_{\rho} \\ \nonumber
+& \simeq &\frac{1}{\pi
+Q^{2}_{sA}}\exp[-\frac{q_{\perp}^{2}}{Q^{2}_{sA}}]. 
+\end{eqnarray}
+It has been suggested in Refs~\cite{Dominguez:2011gc, Dumitru:2011vk} that both
+dipole and WW gluon distributions have similar geometric scaling behavior.
+Therefore, one can parameterize these gluon distributions following the
+Golec-Biernat W\"{u}sthoff (GBW)~\cite{GolecBiernat:1998js} model calculation, in
+which $Q^{2}_{sA}(x)=c(b)A^{1/3}Q^{2}_{s0}(x/x_{0})^{-\lambda}$, with $Q_{s0}=1$
+GeV, $x_{0}=3.04\times 10^{-4}$ and  $\lambda=0.288$. The gluon saturation
+momentum is related to $Q^{2}_{sA}(x)$ by
+$Q_s^2(x)=\frac{2N_c^2}{N_c^2-1}Q^{2}_{sA}(x)$. $c(b)=c(0)\sqrt{1-b^{2}/R^{2}}$
+gives the nuclear profile dependence with a radius $R$, where $b$ is the impact
+parameter. As it is not an easy task to determine the exact impact parameter in \eA\
+collisions, a median number $c(b)=0.8$ is used for the estimation,
+which is supposed to average the nucleus geometry effectively. The parametrized
+DSS fragmentation function~\cite{deFlorian:2007aj},
+$D(z,p_{\perp})=D(z)\frac{1}{\pi\langle
+p^{2}_{\perp}\rangle}e^{\frac{-p_{\perp}^{2}}{\langle p^{2}_{\perp}\rangle}}$ with
+$\langle p^{2}_{\perp}\rangle=0.2 \, \mathrm{GeV}^{2}$, is used to compute the hadron
+production.
+
+By utilizing Eq.~(\ref{eqn:xspairCGC}) and Eq.~(\ref{eqn:xstrigCGC}), one can
+straightforwardly calculate the coincidence probability. The theoretical
+prediction at the Born level for the suppression of the away-side of the
+dihadron correlation measurement is shown by the solid curves in
+Fig.~\ref{fig:dihadron_theory_sud}.
+
+All the above results are estimated based on the LO Born level
+contribution. At the EIC energy scale the one-loop
+contribution~\cite{Mueller:2012uf}, which is also known as the so-called Sudakov
+factor, can be important as well. To include the Sudakov factor contribution at
+leading double logarithm level, one can rewrite the relevant WW distribution as
+follows~\cite{Mueller:2013wwa}:
+\begin{equation}
+\mathcal{F}(x_{g}, q_{\perp}) =
+\frac{1}{2\pi^{2}} \int d^{2}r_{\perp} e^{-iq_{\perp}r_{\perp}}
+\frac{1}{r^{2}_{\perp}}[1-\exp(-\frac{1}{4}r^{2}_{\perp}Q^{2}_{s})]
+\exp[-\frac{\alpha_sN_c}{4\pi}\ln^2\frac{K^2r_{\perp}^2}{c^2_0}],
+\label{eqn:Sudakov}
+\end{equation}
+where $K^2$ represents the hard momentum scale in two-particle production
+processes. It can be chosen as $K^2=P^2_{\perp}$ or $K^2=Q^2$, depending on which
+one is larger, and $c_0=2e^{-\gamma_E}$ with the Euler constant $\gamma_E$. It
+is known that the single logarithmic terms as well as the next-to-leading order
+(NLO) contribution of the Sudakov factor also have sizeable contributions 
+compared to the above leading double logarithmic contribution. Therefore, the
+numerical value of $\alpha_s$ in the Sudakov factor used in this calculation may
+be different from what one normally expects according to a QCD running coupling
+constant calculation.
+
+One needs to pay attention to the applicability of this calculation.
+As the GBW model is not sufficient to describe the UGDs in the region where 
+$q_{\perp}$ is much larger than $Q_s$, we should limit this calculation to the
+saturation region ($x_g<0.01$) to ensure the GBW model
+can be applied. Additionally, to ensure that the power corrections to the
+two-particle production are negligible, one needs the magnitude of the jet
+transverse momenta $P_{\perp}$ to be much larger than $Q_s$.
+
+The current calculations are performed for $Q^2$ of the same order as
+$P^2_{\perp}$. For pair production, the Sudakov factor is usually due to
+a scale difference between $P_{\perp}$ and the dijet momentum imbalance $q_{\perp}$.
+Because we have required that $P_{\perp}\gg q_{\perp}$ as discussed above, it is
+necessary to include the Sudakov contribution.  As for the trigger hadron
+inclusive cross section, the Sudakov factor is not important, since the trigger
+hadron \pt is of the same order as $Q$ and $P_\perp$. An illustration of
+this Sudakov effect with $\alpha_s=0.35$ can be found in
+Fig.~\ref{fig:dihadron_theory_sud} labeled by the dashed lines.
+\begin{figure}
+\includegraphics[width=0.5\textwidth]{plots/chpt6/theory_10x100_y_0.7_deltaphi_Sud_as_0.35.eps} 
+\caption[theory prediction of dihadron correlation with Sudakov] {[color online] 
+$\pi^0$-correlation curves calculated in the saturation formalism at 10
+GeV$\times $100 GeV for \ep\ (thick line) and \eAu\ (thin line) with (dashed
+curve) and without (solid curve) the Sudakov factor. The kinematics chosen are
+$y=0.7$, $Q^2=1 \, \textrm{GeV}^2$, $z_{h1}=z_{h2}=0.3$, $p_{h1\perp}>2 \,
+\mathrm{GeV}/c,1 \, \mathrm{GeV}/c<p_{h2\perp}<p_{h1\perp}$.
+\label{fig:dihadron_theory_sud}
+}    
+\end{figure}
+It is worthwhile to point out that the Sudakov effect in a nuclear environment
+is still not very well known. In the current small $x$ scenario as shown in
+Eq.~(\ref{eqn:Sudakov}), it is convoluted with the gluon distribution function.
+The theoretical calculation indicates that the Sudakov factor has no nuclear
+$A$ dependence at LO. As shown in Fig.~\ref{fig:dihadron_theory_sud}, the away-side 
+suppression of the dihadron correlation is due to the combination of the
+Sudakov suppression and saturation effects. It is conceivable that the
+suppression due to saturation effects shall become more and more dominant when
+the ion beam species are changed from proton to gold, while the Sudakov effect
+remains more or less the same. 
+
+%The kinematic variables are defined
+%as $Q^{2}=-q^{2}$, $y=\frac{P\cdot q}{P\cdot k}$, $z_{h}=\frac{P\cdot
+%P_{h}}{P\cdot q}$ where $P_{h}, k, P$ and $q$ are the 4-momenta of the final state
+%hadron, incoming lepton and nucleon (nucleus) and the exchanged photon. $p_{1T}$ and
+%$p_{2T}$ are the transverse momenta with respect to the virtual photon for
+%trigger and associate particle, respectively. Accordingly, $z_{1h}$ and $z_{2h}$
+%are the $z_{h}$ for trigger/associate particles. 
+
+
+
+
+\section{Electron-Ion Collider and Simulations}\label{sec:MC}
+
+\subsection{The Electron-Ion Collider and its Detector}
+
+Two independent designs for an EIC are being developed in the United States:
+eRHIC, at Brookhaven National Laboratory (BNL); and MEIC/ELIC at Thomas
+Jefferson National Laboratory (JLab).  The following studies will focus on the
+eRHIC version of an EIC and the new model detector at eRHIC. The eRHIC design at
+BNL reuses the available infrastructure and facilities of RHIC's high-energy
+polarized proton/ion beam. A new electron beam, based on Energy Recovery LINAC
+(ERL) technology, is to be built inside the current RHIC tunnel. At eRHIC, the
+collision luminosity is expected to be in the order of $10^{33-34}
+\textrm{cm}^{-2}\textrm{s}^{-1}$. The full range of proton/ion beam energies will be accessible
+from the beginning of operations, while the electron beam energy will start with
+$10-15$ GeV and later be increased to $20$ GeV.
+
+The tracking system of the baseline eRHIC detector will consist of a TPC, GEM
+and silicon detectors spanning a range of $-4<\eta<4$ in pseudorapidity. The
+end-cap and barrel region on the detector will be equipped with electromagnetic
+calorimeters covering $-4.5<\eta<4.5$. Hadronic calorimeter will be used mostly
+for jet physics at full energy in the forward (hadron beam going direction) and
+backward (electron beam going direction) rapidities spanning $2<|\eta|<4.5$.
+Projected momentum and energy resolutions of these devices are better than a few
+percent, which extends the capability of this detector to a large variety of
+physics topics.
+
+The present study is based on the planned lepton and nucleon beam energy of 10
+GeV $\times$ 100 GeV and 20 GeV $\times$ 100 GeV. The kinematics are constrained
+to the main region of interest for dihadron correlation studies,
+$1\, \textrm{GeV}^{2}<Q^{2}<20 \, \textrm{GeV}^{2}$ and
+$0.01<y<0.95$. Backward electromagnetic calorimetry and the TPC are utilized for
+reconstruction of the event kinematics (based on the scattered electron). As shown in
+Fig.~\ref{fig:Q2VsxBj}, abundant high-\pt particles will be generated in the
+specified kinematic region to make correlated hadron pairs even with a limited
+luminosity of 1 $fb^{-1}$. Among those generated high-\pt particles,
+Fig.~\ref{fig:PtSpectrum} suggests that gluon dijet processes dominate in the
+production of particles with a transverse momentum greater than 2 GeV/$c$ and
+charged pions are the major component for the final state particles.
+
+
+\begin{figure*} 
+\begin{center}
+
+\includegraphics[width=0.45\textwidth]
+{plots/chpt6/q2vx_paircount_10x100_1fb-1.eps}
+\includegraphics[width=0.45\textwidth]
+{plots/chpt6/q2vx_paircount_20x100_1fb-1.eps}
+
+\end{center} 
+\caption[statistics in allowed kinematics region]{Expected yields of charged
+particle pairs at transverse momentum $p_{T}>1$ GeV/$c$ in bins of 
+($Q^{2}$, $x_{Bj}$) for an integrated luminosity of $1 \, fb^{-1}$ for 
+\ep\ 10 GeV $\times$100 GeV (Left) and 20 GeV $\times$100 GeV (Right) in the kinematic
+range of $1\, \textrm{GeV}^{2}<Q^{2}<20 \, \textrm{GeV}^{2}$, and $0.01<y<0.95$.}
+\label{fig:Q2VsxBj}
+\end{figure*}
+
+\begin{figure*} 
+\begin{center} 
+
+\includegraphics[width=0.45\textwidth]
+{plots/chpt6/ep_10x100_Q2_1_20_y_0.01_0.95_process_ptSpectrum.eps}
+\includegraphics[width=0.45\textwidth]
+{plots/chpt6/ep_10x100_Q2_1_20_y_0.01_0.95_PID_ptSpectrum.eps}
+
+\end{center} 
+\caption[process or PID dependent pt distribution]
+{[color online] Particle $p_{T}$ distributions for \ep\ 10 GeV $\times$ 100 GeV collisions with
+$1 \, \mathrm{GeV}^{2}  < Q^{2} < 20 \, \mathrm{GeV^{2}}, 0.01 < y < 0.95$. Left: charged particle production from LO DIS, gluon dijets
+(PGF and resolved gluon channel) and quark dijets (QCDC and resolved quark channel).
+Right: $\pi^{\pm}, K^{\pm}, p^{\pm}$ and $\pi^{0}$ production for all processes.}
+\label{fig:PtSpectrum}
+\end{figure*}
+
+\subsection{Monte Carlo Set Up}
+The simulation part of this study is based on the PYTHIA-$6.4$ Monte Carlo program,
+with the PDF input from the LHAPDF library~\cite{Whalley:2005nh} and JETSET used for
+fragmentation processes. If one defines $\hat{p_{T}}$ as the transverse momentum
+of final state partons in the center of mass system of the hard interaction, the
+factorization scale $\mu^{2}$ of $2\rightarrow 2$ processes can be expressed
+as $\mu^{2} = \hat{p_{T}}^{2} + \frac{1}{2}Q^{2}$.
+
+In PYTHIA, depending on the wave function components for the incoming virtual
+photon, various subprocesses are divided into three major classes: the direct
+processes, the VMD processes and the anomalous processes~\cite{Friberg:2000ra},
+as illustrated in Fig.~\ref{fig:PYTHIAFeyn}. The direct photon interacts as a
+point-like particle with the partons of the nucleon, while the VMD and anomalous
+components interact through their hadronic structure. The VMD component is
+characterized by non-perturbative fluctuations of the photon into a $q\bar{q}$
+pair existing long enough to evolve into a hadronic state before the subsequent
+interaction with the nucleon ~\cite{Bauer:1977iq}. This process can be described
+in the VMD model, where the hadronic state is treated as a vector meson (e.g.
+$\rho^0$, $\omega$, $\phi$ ) with the same quantum numbers as the photon. These
+VMD states can undergo all the soft/hard interactions with the nucleon allowed
+in hadronic physics. The large-scale, perturbatively fluctuated photons can be
+added as the anomalous photon part in a Generalized VMD (GVMD) model. Same pQCD
+$2\rightarrow2$ process can be developed over the VMD or anomalous state of the
+virtual photons on the target nucleon, with the difference that parameterized
+photon PDFs are used for anomalous photons whereas for the hard VMD components
+those vector meson PDFs are involved. Hard VMD and anomalous process are usually
+referred to as ``resolved'' process. Resolved photon processes play a significant
+part in the production of hard high-$p_{T}$ processes at $Q^{2}\approx0$. The
+following hard subprocesses are grouped in the resolved processes category:
+$qq\rightarrow qq, \, q\bar q \rightarrow q \bar q, \, q\bar q\rightarrow gg, \,
+qg\rightarrow qg, \, gg\rightarrow q\bar q, gg\rightarrow gg$. In the
+high-$Q^{2}$ region, direct processes become dominant, Fig.~\ref{fig:DISgraph}
+shows the major subprocesses in that category: LO DIS, Photon-Gluon Fusion (PGF)
+and QCD Compton (QCDC). As the PGF process is directly sensitive to the gluon
+distribution, it is extremely important for DIS dijet productions. The final
+conditional yield can be expressed as a superposition from different processes:
+\begin{equation} 
+C(\Delta\phi)=\Sigma_{i}w_{i}w^{s}_{i}C(\Delta\phi)_{i},
+\label{eqn:subprocess} 
+\end{equation}
+with $w_{i}$ being the statistical weight of every subprocess $i$ involved in
+the measurement and $w^{s}_{i}$ is the suppression factor for the subprocess $i$
+from saturation. For the quark channels unaffected by saturation $w^{s}_{i}=1$,
+while for the gluon channels, suppression of $C(\Delta\phi)$ at away-side is
+expected with $w^{s}_{i}<1$.
+
+\begin{figure*} 
+\begin{center} 
+\subfigure[]{ 
+\centering
+\includegraphics[width=0.25\textwidth]{plots/chpt6/feynman/Direct.eps} \label{fig:Direct} 
+}
+\quad 
+\subfigure[]{ 
+\centering
+\includegraphics[width=0.25\textwidth]{plots/chpt6/feynman/VMD.eps} \label{fig:VMD} 
+} 
+\quad
+\subfigure[]{ 
+\centering
+\includegraphics[width=0.25\textwidth]{plots/chpt6/feynman/Anomalous.eps} \label{fig:Anomalous} 
+}
+\caption[PYTIHIA subprocess categories]{Feynman diagrams for different
+PYTHIA subprocesses contributing to the hard interaction: (a) direct, (b) VMD,
+(c) anomalous. The dotted lines indicate the presence of a spectator. Bubbles
+stand for a hadron or hadronic structure.}
+\label{fig:PYTHIAFeyn} 
+\end{center} 
+\end{figure*}
+
+\begin{figure*}
+	\begin{center}
+	\subfigure[]{
+		\centering
+		\includegraphics[width=0.25\textwidth]{plots/chpt6/feynman/LODIS.eps}
+		\label{fig:LODIS}
+	}
+	\quad
+	\subfigure[]{
+		\centering
+		\includegraphics[width=0.25\textwidth]{plots/chpt6/feynman/PGF.eps}
+		\label{fig:PGF}
+	}
+	\quad
+	\subfigure[]{
+		\centering
+		\includegraphics[width=0.25\textwidth]{plots/chpt6/feynman/QCDC.eps}
+		\label{fig:QCDC}
+	}
+	\caption[direct subprocess]{Feynman diagrams for the hard processes 
+	based on point-like photons: (a) $\mathcal{O}(\alpha^{0}_{s}) $ LO DIS, (b) 
+	Photon-Gluon Fusion (PGF) and (c) QCD Compton scattering (QCDC).}
+	\label{fig:DISgraph}
+	\end{center}
+\end{figure*}
+
+To simulate \ep\ events the CTEQ6M~\cite{Pumplin:2002vw} PDF in the
+$\overline{\textrm{MS}}$ scheme is used. For the \eA\ event sample, the NLO
+EPS09 parton distribution functions \cite{Eskola:2009uj} and hard parton energy
+loss based on the medium geometry have been applied to account for nuclear
+effects in the simulation. Modifications of nuclear PDF have the form
+\begin{equation}
+f^{A}_{i}(x, Q^{2}) = R^{A}_{i}(x, Q^{2})f^{p}_{i}(x, Q^{2}),
+\end{equation} 
+where $R^{A}_{i}$ is the nuclear modification factor multiplied on top of the
+free proton PDF $f^{p}_{i}(x, Q^{2})$ for a parton of flavor $i$, 
+with $f^{p}_{i}(x, Q^{2})$ being the CTEQ6M PDF set. Assuming isospin symmetry
+for protons and neutrons, the up/down quark distribution can be
+averaged according to the corresponding mass number $A$ and charge number $Z$. 
+The hard parton energy loss in the nuclear medium is included
+following the parton quenching model (PQM) formalism based on
+Ref~\cite{Salgado:2003gb}. In the energy loss picture, the medium effect is
+characterized by the so-called transport coefficient, defined as the average
+medium-induced squared transverse momentum per unit path length for a hard parton:
+\begin{equation} 
+\hat{q} =
+\left\langle k^{2}_{\perp}\right\rangle _{medium}/\lambda,
+\end{equation} 
+where $\lambda$ is the mean free path and $k_{\perp}$ represents the
+medium-introduced transverse momentum to the hard parton. The characteristic energy loss
+scale is set by
+\begin{equation} 
+\omega_{c} =
+\frac{1}{2}\hat{q}L^{2}. 
+\end{equation}
+$L$ is the medium path length the parton traverses through. It is determined
+by the impact parameter at which the hard scattering occurs with respect to 
+the geometry of the nucleus described by a Wood-Saxon distribution. Using the above
+parameters, one can define the energy loss probability distribution as follows
+\begin{equation} 
+P(\Delta E; R, \omega_{c}) = p_{0}(R)\delta(\Delta E) + p(\Delta E; R, \omega_{c}),
+\end{equation} 
+where $p_{0}$ is the probability that the parton experiences no medium induced radiation.
+
+In the phenomenological studies of dihadron correlations, triggering on a hadron
+with high-$p_T$ on average selects the most energetic hadron in events with 
+back-to-back jets. Correlated hadron pairs reflect two important features of QCD 
+dynamics of the hard scattering process.
+First, an associated hadron at the near-side allows one to probe the in-medium
+QCD evolution of an energetic parton, which can be viewed as the final state
+effect with the nuclear medium. Second, an associated hadron at the away-side,
+in addition to the primary hard scattering, is sensitive to the initial
+transverse momentum that the incoming parton carries.
+
+For pQCD calculations in the collinear factorization framework, the PDFs and fragmentation
+functions do not contain any transverse momentum dependence. Therefore, the
+transverse momentum of hadrons produced in the final state is given by
+$p_{T}=z\hat{p_{T}}$, where $\hat{p_{T}}$ and $p_{T}$ are the transverse
+momentum of the parton and hadron respectively. $z$ represents the momentum fraction
+of a hadron with respect to its mother parton. This relation should be revised
+if the transverse momentum is allowed in both the PDFs and fragmentation
+functions.
+
+Transverse motion of partons inside hadrons can be effectively included by
+assuming that the intrinsic \kt follows a Gaussian distribution. Similarly, the
+transverse momentum enhancement  $p_{T}^{\textrm{frag}}$ with respect to the jet
+direction during hadronization can also be approximated by a Gaussian
+distribution. The intrinsic \kt and fragmentation $p_{T}^{\textrm{frag}}$ now
+both contribute to the transverse momentum of final state hadrons, which can be
+written as $p_{T} =z(k_{T}+\hat{p_{T}})+p_{T}^{\textrm{frag}}$. We follow the
+common practice to set the Gaussian width to $0.4$ GeV for both intrinsic $k_{T}$ 
+and $p_{T}^{\textrm{frag}}$ distributions in the simulations.
+
+Besides all the above effects, additional soft gluon radiations, normally 
+characterized as a parton shower can also modify the final transverse
+momentum, thereby impacting the dihadron correlations. In perturbative QCD
+calculations the parton shower are computed in terms of Sudakov
+form factors.
+
+Fig.~\ref{fig:dihadron_effects} shows an illustration of all the possible
+effects available in the Monte Carlo in the simulation of the azimuthal correlation
+function. The open circles illustrate the dihadron correlation with only
+intrinsic $k_T$ in the initial parton distribution. It is understandable that the
+correlation function is strongly peaked at $\Delta \phi =0, \pi$ for this setting.
+Now the other effects are turned on one-by-one according to the order of their
+occurrences in physical processes. When the initial state (IS) parton shower
+is added into the simulation, as shown by the open diamonds, the away-side
+correlation is significantly reduced since it is very sensitive to the momentum
+imbalance of the dijet system, while the near-side correlation is almost
+unmodified. Next, we turn on the final state (FS) parton shower for the scattered 
+parton before the fragmentation process occurs. We find that both the
+near-side and away-side peaks are broadened, as illustrated by the empty triangles,
+due to soft radiation and particle decay in the fragmentation. 
+Lastly, we add transverse momentum dependence into the fragmentation 
+function, labeled as $p_T^{\textrm{frag}}$, and obtain the crossings, which indicate further broadening of both peaks.
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.5\textwidth]
+{plots/chpt6/deltaPhi_20x100_Q2_1_y_0.7_Effects_decay.eps}
+\end{center} 
+\caption[effects in Monte Carlo on azimuthal diahdron correlation]
+{[color online] Comparison of dihadron correlation due to different physical inputs, such as 
+intrinsic $k_T$, initial state parton shower (IS), final state parton shower plus 
+resonance decay (FS) and $p_T$ broadening in fragmentation processes.
+The \ep\ data are for charged hadrons with a beam energy of 20 GeV $\times$ 100 GeV 
+with $1.0 \, \mathrm{GeV}^{2}  < Q^{2} < 1.5 \, \textrm{GeV}^2, 0.65 < y < 0.75, p_{T}^{trig} > 2 \,
+\mathrm{GeV/}c, 1 \, \mathrm{GeV/}c < p_{T}^{assoc} < p_{T}^{trig}, 0.2 <
+z_{h}^{trig}, z_{h}^{assoc} < 0.4$. }
+\label{fig:dihadron_effects}
+\end{figure}
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.5\textwidth]
+{plots/chpt6/20x100_epAndeAu_Q2_1_y_0.7_uncertainty_EPS09_withfit.eps} 
+\end{center} 
+\caption[Monte Carlo result of diahdron correlation]{[color online] Simulated data points for particle correlations
+for charged hadrons in \ep\ and \eAu\ collisions with beam energies of 20 GeV $\times$ 100
+GeV and $1.0 \, \mathrm{GeV}^{2}  < Q^{2} < 1.5 \, \mathrm{GeV}^{2} , 0.65 < y < 0.75, p_{T}^{trig} > 2 \, \mathrm{GeV/}c, 1
+\, \mathrm{GeV/}c < p_{T}^{assoc} < p_{T}^{trig}, 0.25 < z_{h}^{trig}, z_{h}^{assoc} <
+0.35$. Lines are the fit for \ep\ or \eA\ points. The shaded band shows the uncertainty due to the EPS09 nuclear PDFs.
+\label{fig:dihadron_base}}
+\end{figure}
+
+For our model of \eA\ implemented in PYTHIA, the effects due to energy loss
+in the cold nuclear medium are expected to be weak, because fast moving partons are likely to
+fragment outside the nucleus in the considered kinematic regions. Considering
+that the nuclear PDF also has little impact on the $p_{T}$ imbalance of dijets,
+it comes as no surprise to see very little change from \ep\ to \eA\ in the
+simulation, as shown in Fig.~\ref{fig:dihadron_base}.
+\begingroup
+\begin{table} 
+\centering 
+\caption[table for effects on azimuthal correlation function]{Relative 
+Root Mean Square (RMS) for the $\Delta\phi$ distribution from \ep\ collisions including
+different effects influencing the width of the near and away side peak compared
+to the baseline RMS with all the effects included (bottom row).}
+\label{tab:azimuRMS} 
+\begin{tabular}{ l  c  c  } \hline \hline
+		& Near-side $\Delta\phi$ RMS & Away-side $\Delta\phi$ RMS \\ \hline
+\kt		  	&  0.21  &  0.25   \\  
+\kt+ IS     &  0.30  &  0.72   \\  
+\kt+ IS + FS    & 0.65  &  0.81   \\  
+\kt+ IS + FS + $p_T^{\textrm{frag}}$    &  1.00  & 1.00   \\ \hline \hline
+\end{tabular} 
+\end{table}
+\endgroup
+Table~\ref{tab:azimuRMS} is a reference for different effects on the relative root mean
+square (RMS) deviation of the near/away side azimuthal correlation function,
+from which we can clearly draw the conclusion that initial-state parton showers
+dominate the away-side peak of the correlation function, while the near-side peak 
+is mainly controlled by final-state effects such as final-state parton showers, 
+fragmentation \pt and possible resonance decays in the fragmentaion.
+
+As the saturation physics discussed above is mainly about the gluon dynamics, in
+order to be able to consistently compare with the theoretical dihadron cross
+section in Sec.~\ref{sec:theory}, we need to include gluon dijet channels from
+PGF and gluon-initiated resolved process in the comparison. However, as the
+measured observable in the real experiment is a mixture of different process, as
+illustrated in Eq.~(\ref{eqn:subprocess}), we have to know how significant the
+signal from gluon saturation manifests itself in a mixed event sample. From the
+saturation-based predictions, a sizeable suppression of the away-side peak from \ep\
+to \eA\ is expected.
+
+In the meanwhile, it is crucial to point out that parton showers suppress the
+away-side peak of the dihadron correlation function just like saturation does.
+However, currently it is still unclear how the parton shower effect is modified
+in the nuclear medium, without which it is hard to draw any definite conclusions
+about the saturation effects, as parton showers and saturation effects are always
+entangled. Nevertheless, thanks to the large kinematic coverage of eRHIC, one
+can explore the nuclear dependence of parton showers outside the saturation
+region by measuring dihadron correlations for different nuclei in the high
+$Q^2$ regime. This kinematic regime has a significant phase space for parton
+showers for this observable. More importantly, the measurement of dihadron
+correlations gives the opportunity to use the near-side peak of the correlation
+function as a reference to study the nuclear medium effects on parton showers as
+the saturation effects only manifest themselves in the away-side peak, as shown
+in Fig.~\ref{fig:dihadron_effects}.
+
+In the saturation formalism, the parton shower contribution is effectively cast
+into the Sudakov factor for the DIS dijet process at small $x$. To illustrate this
+point, Fig.~\ref{fig:epCompareWithSud} shows the correlation function simulated
+with and without parton showers, compared to the corresponding theoretical
+predictions with and without Sudakov effects. The filled circles represent the PYTHIA
+simulation for \ep\ without parton showers, and they agree very well with the solid
+line from the theoretical prediction including saturation effects, but excluding
+Sudakov effects. The comparison (empty circles and dashed line) between simulated PYTHIA \ep\
+data including parton showers and the theoretical predictions with
+saturation plus Sudakov effects is also good, especially considering the model
+uncertainties. Thus, the agreement in \ep\ collisions enables one to estimate the
+nuclear medium effects on parton showers in the theoretical predictions for
+saturation including Sudakov effects.
+
+Since the saturation effect decouples from hadronization, it does not
+depend on which specific particle type being detected. Although the theoretical
+prediction is made for $\pi^{0}$, the suppression factor from \ep\ to \eA\
+still holds for other different final state particles. In the next section, the
+significance for the suppression of gluon saturation will be shown for the
+charged hadrons $C(\Delta\phi)$ observable with limited statistics and
+expected background estimation.
+\begin{figure} 
+\begin{center}
+\includegraphics[width=0.5\textwidth]{plots/chpt6/ep_10x100_Q2_1_y_0.7_theory_MC_compare_as_0.35.eps} 
+\end{center} 
+\caption[comparison of ep from PYTHIA and theory with Sudakov]
+{[color online] \pion $\Delta\phi$ correlation comparing PYTHIA and theoretical saturation calculations
+for \ep\ 10 GeV $\times$ 100 GeV for events from PGF and resolved gluon channel subprocesses
+ at $1.0 \, \mathrm{GeV}^{2} < Q^{2} < 2.0 \, \mathrm{GeV}^{2}$, \, $0.65 < y < 0.75, \, p_{T}^{trig} > 2 \,
+\mathrm{GeV/}c, 1 \, \mathrm{GeV/}c < p_{T}^{assoc} < p_{T}^{trig}, \,0.25 <
+z_{h}^{trig}, z_{h}^{assoc} < 0.35$. The solid and dashed curves show theoretical predictions including 
+saturation effects for \ep\ without and with Sudakov factor, respectively. 
+The filled and empty circles illustrate PYTHIA simulations for \ep\ without and with parton showers. }
+\label{fig:epCompareWithSud} 
+\end{figure}
+
+
+\subsection{Monte Carlo Results and Uncertainties} 
+
+In order to guarantee the validity of perturbative calculations and avoid the
+kinematic regime of quasi-real photo-production, a cut of $Q^{2}>1
+\, \mathrm{GeV}^{2}$ is generally made. On the other hand, probing the
+saturation dynamics requires to probe the dense region, which means that one
+needs to go to low $x$ and low-to-moderate $Q^{2}$ in the pursuit of
+saturation effects at a certain center of mass energy. A cut in transverse
+momentum of the charged hadron pairs is usually performed to pick particles from
+hard interactions. A cut on $z_{h}$ is also imposed to reject particles from the
+target remnants. Thus, a typical cut to select dihadron pairs from hard parton
+scatterings is: $p_{T}^{trig}>2$ GeV/$c$, $1 \, \mathrm{GeV/}c
+<p_{T}^{assoc}<p_{T}^{trig}, 0.2<z_{h}^{trig},z_{h}^{assoc}<0.4$. To further explore the
+transition behavior in and out of the saturation region, we use three $Q^{2}$ bins:
+$1\, \textrm{GeV}^{2}<Q^{2}<2 \, \mathrm{GeV}^{2}$, $3\, \textrm{GeV}^{2}<Q^{2}<5 \,
+\mathrm{GeV}^{2}$ and $9\, \textrm{GeV}^{2}<Q^{2}<20 \, \mathrm{GeV}^{2}$; and two $y$ bins:
+$0.25<y<0.35$ and $0.6<y<0.8$. To study saturation physics using varying heavy
+ion beams, we focus on the $1\, \textrm{GeV}^{2}<Q^{2}<2 \, \mathrm{GeV}^{2}$, $0.6<y<0.8$
+bin, while the $9\, \textrm{GeV}^{2}<Q^{2}<20 \, \mathrm{GeV}^{2}$ or $0.25<y<0.35$ bins serve
+as a reference for the behaviour without saturation effects. To pin down the
+nuclear dependence of parton showers, we compare the correlation between \ep\
+and \eA\ collisions for bins without saturation effects.
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.5\textwidth]{plots/chpt6/xbjVsxg_highPtPairs_PGF_10x100.eps}
+\end{center}
+\caption{The correlation of $x_{Bj}$ vs $x_{g}$ for the PGF process for \ep\ at 
+10 GeV $\times$ 100 GeV with $0.01<y<0.95$, $1\, \textrm{GeV}^{2}<Q^{2}<20 \, \mathrm{GeV^{2}}$. A relatively 
+broad correlation between these two variables is observed. }
+\label{fig:xbjVsxg}
+\end{figure}
+Because the saturation scale $Q_{s}$ varies with the gluon momentum fraction
+$x_{g}$, it is important to have access to $x_{g}$.
+Fig.~\ref{fig:xbjVsxg} shows how, by utilizing $x_{Bj}$, one can
+effectively constrain the underlying $x_{g}$ distribution. Although this is only
+a broad correlation, it is demonstrated in Fig.~\ref{fig:xgCover} that
+the typical $x_{g}$ at a given $x_{Bj}$ is constrained to a certain magnitude and can be used to
+separate the saturation region from the non-saturated region.
+\begin{figure*}
+\begin{center}
+\includegraphics[width=0.8\textwidth]{plots/chpt6/ep_10x100_xg_distribution_multibins.eps} 
+\end{center} 
+\caption[$x_{g}$ coverage]{[color online] $x_{g}$ distributions in various kinematics bins
+probed by the correlated hadron pairs in the PGF process for \ep\ 10 GeV
+$\times$ 100 GeV. }
+\label{fig:xgCover} 
+\end{figure*}
+Fig.~\ref{fig:pairEta} shows the $\eta$ distribution of the trigger
+particle and the correlated particle in the aforementioned kinematic
+bins at 10 GeV $\times$ 100 GeV and 20 GeV $\times$ 100 GeV. Clearly, with a
+charged particle acceptance spanning $-4.5<\eta<4.5$, both trigger and
+associate particles in our kinematics binning scheme can be fully accepted by
+the detector.
+\begin{figure*}
+\begin{center}
+\includegraphics[width=0.8\textwidth]{plots/chpt6/ep_10And20x100_trig_2_asso_1_z_0.2_0.4_multiBin_etaCorre.eps}
+\end{center} 
+\caption[dihadron pair $\eta$ distribution]{[color online] The contours show the
+$\eta$ regions covered by the correlated dihadron pairs: for 10 GeV $\times$ 100
+GeV and 20 GeV $\times$ 100 GeV. Thick lines mark out the region for $0.6<y<0.8$
+while thin lines for $0.25<y<0.35$.}
+\label{fig:pairEta} 
+\end{figure*}
+
+As shown in Fig.~\ref{fig:dihadron_theory_sud}, if we are in a kinematic regime in 
+$x$ and $Q^2$ where saturation effects are to be expected, the dihadron correlation 
+function should exhibit a noticeable suppression of the away-side peak.
+The most promising kinematics bin to study this saturation signature at an EIC is $1\, \textrm{GeV}^{2}<Q^{2}<2 \,
+\mathrm{GeV}^{2}$ and $0.6<y<0.8$.
+
+\begin{figure*}[hbt]
+\begin{center}
+\includegraphics[width=0.8\textwidth]{plots/chpt6/Q2_1_y_0.7_varying_Qs_uncertainty_Sud_withfit_smear.eps} 
+\end{center} 
+\caption[correlation function with saturation scale uncertainty]{[color online] The correlation
+function at $1\, \textrm{GeV}^{2}<Q^{2}<2 \, \textrm{GeV}^{2}$, $0.6<y<0.8$ for an  
+integrated luminosity of $1 \, fb^{-1}$. The \ep\ result comes from PYTHIA simulations.
+The $e+$Au results are a combination of simulations from a saturation-based model plus modified
+PYTHIA simulations. The suppression factor uncertainty was estimated by varying
+$Q_{s}^{2}$ by a factor of 0.5 and 2. Sudakov resummation has also been incorporated
+for \eAu. The solid lines represent a fit for the simulated pseudo-data
+including detector effects; the dashed line excludes detector effects.}
+\label{fig:correUncertainSud}
+\end{figure*}
+
+In Fig.~\ref{fig:correUncertainSud} we compare the strength of the
+coincidence probability based on a theoretical saturation model prediction for
+the away-side for \ep\ and $e+$Au. The filled circles in
+Fig.~\ref{fig:correUncertainSud} are simulated with PYTHIA
+for \ep\ collisions, including detector smearing and acceptance effects.
+The projected $e+$Au saturated correlation function (open circles) is
+obtained by multiplying the \ep\ histogram with the suppression factor
+$w^{s}_{i}=C(\Delta\phi)_{eAu}/C(\Delta\phi)_{ep}$ including Sudakov effects extracted
+from Fig.~\ref{fig:dihadron_theory_sud}. This suppression factor can only be applied to
+dijet channels involving gluons; namely PGF and resolved $qg\rightarrow qg$,
+$gg\rightarrow gg$, $gg\rightarrow q\bar q$ subprocesses. The other quark
+initiated subprocesses have been simulated with PYTHIA using the non-saturated
+\eA\ model including nuclear PDFs and final-state energy loss. The uncertainties
+represent the statistical precision from an integrated luminosity of $1 \,
+fb^{-1}$. The solid (dashed) lines in Fig.~\ref{fig:correUncertainSud} represent
+fits to the simulated data points with (without) detector effects included in
+the simulation.
+
+Since to date there is no exact knowledge of the saturation scale, the
+uncertainty in the suppression factor is estimated by varying the saturation
+scale by a factor of 0.5 and 2. The resulting uncertainty bands are depicted in
+Fig.~\ref{fig:correUncertainSud}. The suppression of the away-side peak remains
+significant even with this additional uncertainty compared to the $e+$Au curve
+shown in Fig.~\ref{fig:dihadron_base} accounting for nuclear effects in the
+parton distribution functions, energy loss effects and the resonance decay. In
+summary, the suppression effects on dihadron correlations due to saturation can
+be clearly discriminated from effects based on classical nuclear medium
+modifications with a well-designed EIC machine.

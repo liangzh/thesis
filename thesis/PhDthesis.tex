@@ -8,8 +8,22 @@
 %abs_ch,abs_en,introduction,facilities,analysis,results,discussion}
 %discussion}
 
+%define some new commands used quite often
+\newcommand{\pt}{\mbox{$p_T$ }}
+\newcommand{\kt}{\mbox{$k_T$ }}
+\newcommand{ \ptsq }{ $p_{T}^{2}$ }
+\newcommand{\ep}{\mbox{$e+p$}}
+\newcommand{\eA}{\mbox{$e+$A}}
+\newcommand{\eAu}{\mbox{$e+$Au}}
+\newcommand{\dA}{\mbox{$d+$Au}}
+\newcommand{\pA}{\mbox{$p+$A}}
+\newcommand{ \pion }{ $\pi^{0}$ }
+
+\newcommand{ \gammap }{ \gamma^{*}+N\rightarrow h_{1}+h_{2}+X }
+\newcommand{ \gammaA }{ \gamma^{*}+A\rightarrow h_{1}+h_{2}+X }
+\newcommand{ \phase }{ dz_{h1}dz_{h2}d^{2}p_{h1\perp}d^{2}p_{h2\perp}  }
+
 %\newcommand{ \vtwo }{$v_{2}$ }
-\newcommand{ \pt }{$p_{T}$ }
 \newcommand{\pionp}{\pi^{+}}
 \newcommand{\pionn}{\pi^{-}}
 %\newcommand{ \vtwos}{$v_{2}$}
@@ -74,9 +88,12 @@
 %\usepackage{revsymb}
 %\usepackage{rotate}
 \usepackage{epsfig}
+\usepackage{epstopdf}
 %\usepackage{eepic}
 %\usepackage{epic}
 \usepackage{graphics}
+\usepackage{graphicx}
+\usepackage{grffile} %deal with fig name with ".,_ " .etc...
 %\usepackage[center]{caption2}
 %\usepackage{wrapfig}
 %\usepackage{doublespace}
@@ -88,7 +105,6 @@
 \usepackage{MnSymbol}
 %\usepackage{indentfirst}
 \usepackage{fancyhdr}
-\usepackage{graphicx}
 \usepackage{comment}
 \usepackage[squaren]{SIunits}
 \usepackage{color}
@@ -101,6 +117,7 @@
 %\lhead{\includegraphics[height=16mm]{plots/CCNULogo.pdf}} \rfoot{}
 \cfoot{\thepage} \lfoot{}
 \begin{document}
+
 \ifx\href\undefined\else\hypersetup{linktocpage=true}\fi
 %\begin{CJK*}{GBK}{song}
 
@@ -118,6 +135,8 @@
 
 \input{introduction}
 
+\input{dihadron}
+
 
 
 
@@ -126,7 +145,7 @@
 
 %\bibliographystyle{hep}
 \bibliographystyle{uclathes}
-\bibliography{paperlib}
+\bibliography{reference}
 %\bibliographystyle{my-physrev}
 \clearpage
 %

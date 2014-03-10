@@ -1,2 +1,8 @@
 
 templates/
+*.aux
+*.log
+*.lof
+*.lot
+*.toc
+*.out

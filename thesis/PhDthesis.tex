@@ -12,6 +12,8 @@
 \newcommand{\pt}{\mbox{$p_T$ }}
 \newcommand{\kt}{\mbox{$k_T$ }}
 \newcommand{ \ptsq }{ $p_{T}^{2}$ }
+\newcommand{ \qsq }{ $Q^{2}$ }
+\newcommand{ \gevsq }{\mbox{GeV$^{2}$}}
 \newcommand{\ep}{\mbox{$e+p$}}
 \newcommand{\eA}{\mbox{$e+$A}}
 \newcommand{\eAu}{\mbox{$e+$Au}}
@@ -19,11 +21,11 @@
 \newcommand{\pA}{\mbox{$p+$A}}
 \newcommand{ \pion }{ $\pi^{0}$ }
 
+%use only in matho mode
+\newcommand{ \kp }{ k^{\prime} }
 \newcommand{ \gammap }{ \gamma^{*}+N\rightarrow h_{1}+h_{2}+X }
 \newcommand{ \gammaA }{ \gamma^{*}+A\rightarrow h_{1}+h_{2}+X }
 \newcommand{ \phase }{ dz_{h1}dz_{h2}d^{2}p_{h1\perp}d^{2}p_{h2\perp}  }
-
-%\newcommand{ \vtwo }{$v_{2}$ }
 \newcommand{\pionp}{\pi^{+}}
 \newcommand{\pionn}{\pi^{-}}
 %\newcommand{ \vtwos}{$v_{2}$}
@@ -133,11 +135,18 @@
 \listoffigures
 \listoftables
 
+\pagenumbering{arabic}
+
+\allowdisplaybreaks %allow objects in align break in pages
+
 \input{introduction}
-
+\input{saturation}
+\input{experiment}
+\input{EIC}
+\input{MonteCarlo}
 \input{dihadron}
-
-
+\input{geometry}
+\input{summary}
 
 
 %\include{appendix}

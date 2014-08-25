@@ -21,7 +21,7 @@
 \newcommand{\pA}{\mbox{$p+$A}}
 \newcommand{ \pion }{ $\pi^{0}$ }
 
-%use only in matho mode
+%use only in math mode
 \newcommand{ \kp }{ k^{\prime} }
 \newcommand{ \gammap }{ \gamma^{*}+N\rightarrow h_{1}+h_{2}+X }
 \newcommand{ \gammaA }{ \gamma^{*}+A\rightarrow h_{1}+h_{2}+X }
@@ -85,6 +85,7 @@
 
 %\usepackage{pinyin}
 \usepackage{longtable}
+\usepackage{caption}
 \usepackage{amssymb}
 %\usepackage{amsthm}
 %\usepackage{revsymb}
@@ -110,7 +111,9 @@
 \usepackage{comment}
 \usepackage[squaren]{SIunits}
 \usepackage{color}
+%\definecolor{ColorName}{rgb}{r,g,b}
 \usepackage{subfigure}
+\usepackage{url} %add url to references
 \usepackage[colorlinks=true,linkcolor=blue,citecolor=blue]{hyperref}
 
 %===========================================================================
@@ -125,23 +128,23 @@
 
 
 % preliminary page info
-\graphicspath{plots/}
+%\graphicspath{{plots/}} %not used too slow
 %\makeintropages
 
 
 %\pagenumbering{}
-
+\pagenumbering{roman}
 \tableofcontents
 \listoffigures
 \listoftables
-
-\pagenumbering{arabic}
+\newpage %otherwise list of table page starts as the first page with arabic page number
 
 \allowdisplaybreaks %allow objects in align break in pages
 
+\pagenumbering{arabic}
 \input{introduction}
+\input{theory}
 \input{saturation}
-\input{experiment}
 \input{EIC}
 \input{MonteCarlo}
 \input{dihadron}
@@ -152,10 +155,10 @@
 %\include{appendix}
 
 
-%\bibliographystyle{hep}
+%\bibliographystyle{plain}
 \bibliographystyle{uclathes}
 \bibliography{reference}
-%\bibliographystyle{my-physrev}
+
 \clearpage
 %
 %\addcontentsline{toc}{chapter}{Presentations and publication List}

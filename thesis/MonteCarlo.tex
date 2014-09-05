@@ -113,9 +113,9 @@ A illustration of the hybrid \eA\ Monte Carlo generator layout structure. }
 The physical generation flow can be visualized in Fig.~\ref{fig:MC_hybrid_chart}.
 In this model we have two significant nonsaturation based nuclear effects implemented which are relevant to the dihadron correlation studies: the nuclear PDF and the cold nuclear medium energy loss effect.
 
-\subsection{nuclear PDF}
+\subsection{Nuclear parton distribution function}
 In the hybrid Monte Carlo generator, we use a next-to-leading order (NLO) global
-DGLAP analysis of nuclear PDF and their uncertainties with the release called
+DGLAP analysis of nuclear parton distribution function (PDF) and their uncertainties with the release called
 EPS09. Process independent PDFs of free and bound nucleons
 have been discovered to be mutually different for well over twenty years. There
 exist various groups offering parameterizations of the nuclear modified PDFs~\cite{Hirai:2004wq,deFlorian:2003qf}.
@@ -253,7 +253,7 @@ rapid, but less detailed, than a full detector simulation. It is designed to
 answer questions like given a known detector resolution, how well can we
 measure some physics variables. 
 
-In this method, a virtual device "smearer" is defined to smear a physical
+In this method, a virtual device ``smearer" is defined to smear a physical
 quantity according to the user specified resolution if the particle is accepted
 within the smearer's coverage. A smearer should not necessarily be considered to
 be a direct analogue of a single real-world detector subsystem (though in some

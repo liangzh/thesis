@@ -1,7 +1,5 @@
 \chapter{Determination of collision geometry in eA} \label{chp:geometry}
 
-
-\section{Introduction}
 Suggested in Sec.~\ref{sec:eic_eA_physics}, a wide range of nuclear effects can be
 investigated with the EIC facility. For instance, the parton distributions,
 especially for gluons at small momentum fraction $x$, are assumed to be largely modified by
@@ -105,7 +103,7 @@ in which $R_{0}$ corresponds to the typical nuclear radius $\rho_{0}$ is the nuc
 \begin{figure}
 \begin{center}
 \includegraphics[width=0.5\columnwidth]{plots/chpt7/geometry_definition.eps}
-\caption[Geometry quantity definition] {Relevant quantities to describe the collision geometry. $b$ represents the impact parameter. $R$ shows the spatial displacement of the interaction point to the center of the nucleus. $d$ is the traveling length, which defines the projected virtual photon traveling length from the interaction point to the edge of the nuclear medium.}
+\caption[A schematic view of the \eA\ collision and the relevant geometric quantity definition] {Relevant quantities to describe the collision geometry. $b$ represents the impact parameter. $R$ shows the spatial displacement of the interaction point to the center of the nucleus. $d$ is the traveling length, which defines the projected virtual photon traveling length from the interaction point to the edge of the nuclear medium.}
 \label{fig:geometry}
 \end{center}
 \end{figure}
@@ -117,9 +115,10 @@ not involved in the DIS interactions. This process is usually named as the
 
 After all the formed final-state particles leave the nucleus remnant, due to
 momentum conservation, a recoil momentum will lead the residual nucleus to an
-equilibrium state characterized by its mass, charge and excitation energy. At the end of the reaction chain, the
-excited nucleus will break up into stable final products, with the
-emission probability described by the nuclear evaporation model~\cite{Weisskopf:1937zz}. 
+equilibrium state characterized by its mass, charge and excitation energy. At
+the end of the reaction chain, the excited nucleus will break up into stable
+final products, with the emission probability described by the nuclear
+evaporation model~\cite{Weisskopf:1937zz}.
 
 In the statistical evaporation model, the number of neutron emissions strongly
 depends on the excitation energy, which comes from the number of nucleons removed from
@@ -143,17 +142,19 @@ Fig.~\ref{fig:geometry}.
 Once one can select for traveling length, impact parameter (centrality)
 can be effectively constrained according to the traveling length. As is shown
 in Fig.~\ref{fig:distBimp}, events with very central collision ($b\approx 0$)
-can be acquired with the selection of the largest traveling length (blue
-region), although we may have little control on the peripheral collision
-events; the red region corresponds to small traveling length, but it
+can be acquired with the selection of the largest traveling length (covered by blue
+crossings), although we may have little control on the peripheral collision
+events; the region covered by red tilted lines corresponds to small traveling length, but it
 is mixed with central and peripheral collisions.
 \begin{figure}[hbt]
 \begin{center}
 \includegraphics[width=0.55\columnwidth]{plots/chpt7/distance_to_bimpact_contour.eps}
-\caption[Region selected by traveling distance] {Schematic view showing region selected by different traveling length in $y-z$ plane with
-positive $z$ being the virtual photon direction in the nuclear rest frame and $y$ being
-the impact parameter direction. The radius of the nucleus has been set to $R_{0}=$6.52 fm for gold nucleus. Regions selected by $d<0.25R_{0}$
-and $d>1.5R_{0}$ are marked by red and blue, respectively.}
+\caption[Contour of the collision geometry selected by the specific traveling distances] 
+{Schematic view showing region selected by different traveling length in $y-z$
+plane with positive $z$ being the virtual photon direction in the nuclear rest
+frame and $y$ being the impact parameter direction. The radius of the nucleus
+has been set to $R_{0}=$6.52 fm for gold nucleus. Regions selected by
+$d<0.25R_{0}$ and $d>1.5R_{0}$ are marked by red tilted lines and blue crossings, respectively.}
 \label{fig:distBimp}
 \end{center}
 \end{figure}
@@ -182,7 +183,7 @@ with the spectator nucleons~\cite{Ferrari:1995cq}:
 \end{equation}
 with $\tau_{0}$ being a free formation length parameter. $E$, $m$ and
 $p_{\perp}$ are the energy, mass and transverse momentum for the created
-particles respectively. For each hadron, a formation time is sampled from an
+particles, respectively. For each hadron, a formation time is sampled from an
 exponential distribution with an average value as given above. The lower the
 hadron energy is, the higher is the probability for that hadron to form inside
 the nucleus. The kinematics of the secondary interactions occurring in the
@@ -242,7 +243,7 @@ properties of the nuclear break up process.
 \begin{figure}
 \begin{center}
 \includegraphics[width=0.7\columnwidth,keepaspectratio]{plots/chpt7/evap_protonVsneutron.eps}
-\caption[proton neutron number correlation during evaporation]{Correlation between the number of evaporated protons ($N^{evap}_{p}$) and neutrons ($N^{evap}_{n}$). Due
+\caption[Correlation between the number of protons ($N^{evap}_{p}$) and neutrons ($N^{evap}_{n}$) during evaporation process]{Correlation between the number of evaporated protons ($N^{evap}_{p}$) and neutrons ($N^{evap}_{n}$). Due
 to the Coulomb barrier for protons, the proton emission during
 evaporation process is greatly suppressed compared to that of neutron.}
 \label{fig:evapNeutronVsProton}
@@ -261,7 +262,7 @@ emitted neutrons, from nuclear break up in a very clean way.
 \begin{figure}
 \begin{center}
 \includegraphics[width=0.7\columnwidth,keepaspectratio]{plots/chpt7/tau_comparison.eps}
-\caption[comparison with E665]{Results of different formation length parameters as a function of $\nu$ in the simulation compared with the E665 data~\cite{Adams:1995nu}. The green line shows the prospective $e+$Au data kinematics coverage at an EIC.}
+\caption[Average neutron number from evaporation process versus $\nu$ compared to the E665 measurement]{Results of different formation length parameters as a function of $\nu$ in the simulation compared with the E665 data~\cite{Adams:1995nu}. $\nu$ is defined in Sec.~\ref{sec:basicDIS}. The green solid line shows the prospective $e+$Au data kinematics coverage at 10$\times$100 GeV at an EIC.}
 \label{fig:tauCompare}
 \end{center}
 \end{figure}
@@ -280,24 +281,25 @@ If well measured, the neutron number can be used as a handle of the collision
 geometry. However, since it is impossible to directly measure the number of
 neutrons, we will use the energy deposition in a ZDC to extract the neutron
 number information. In the following discussions, an energy resolution $\sigma/E
-= (85/\sqrt{E} + 9.1)\%$ from Ref.~\cite{Adler:2000bd} has been used as the ZDC
-responses for neutron energy. The resolution of the traveling length is
-dominated by its intrinsic correlation with the number of emitted neutrons during
-the evaporation process. The assumed ZDC energy resolution, which is used in the
-current RHIC heavy ion experiments, is sufficient for our study.
+= (85/\sqrt{E} + 9.1)\%$ with $E$ in GeV from Ref.~\cite{Adler:2000bd} has been used as the ZDC
+responses for neutron energy. 
+%The resolution of the traveling length is
+%dominated by its intrinsic correlation with the number of emitted neutrons during
+%the evaporation process. The assumed ZDC energy resolution, which is used in the
+%current RHIC heavy ion experiments, is sufficient for our study.
 
 \begin{figure*}[hbt!]
 \begin{center} 
 \subfigure[]{ 
 \centering
-\includegraphics[width=0.45\columnwidth,keepaspectratio]{plots/chpt7/tau9_neutron_travel_distance_corre.eps} \label{fig:distCorre} 
+\includegraphics[width=0.46\columnwidth,keepaspectratio]{plots/chpt7/tau9_neutron_travel_distance_corre.eps} \label{fig:distCorre} 
 }
 \quad
 \subfigure[]{ 
 \centering
-\includegraphics[width=0.45\columnwidth,keepaspectratio]{plots/chpt7/tau9_neutron_bimpact_corre.eps} \label{fig:bimpCorre} 
+\includegraphics[width=0.46\columnwidth,keepaspectratio]{plots/chpt7/tau9_neutron_bimpact_corre.eps} \label{fig:bimpCorre} 
 }
-\caption[geometry quantity correlation with neutron energy deposit]
+\caption[Geometric quantity correlation with neutron energy deposit]
 {(a) Traveling length $d$ and energy deposition in the ZDC are correlated; (b) impact parameter $b$ not as well constrained (b). } \label{fig:geoCorrelation}
 \end{center} 
 \end{figure*}
@@ -306,8 +308,8 @@ current RHIC heavy ion experiments, is sufficient for our study.
 
 \begin{figure} 
 \begin{center} 
-\includegraphics[width=0.7\columnwidth,keepaspectratio]{plots/chpt7/tau9_travel_dist_constrain.eps}
-\caption[Geometry quantity constrained by binning method]
+\includegraphics[width=0.7\textwidth]{plots/chpt7/tau9_travel_dist_constrain.eps}
+\caption[Geometric quantity constrained by forward neutron energy deposit binning method]
 {Traveling length distribution in different forward neutron energy bins. The black line corresponds to peripheral collisions (66-100\%), while
 the red and green lines correspond to the 33-66\% and 0-33\%, respectively.}
 \label{fig:geoConstrain}
@@ -318,7 +320,7 @@ the red and green lines correspond to the 33-66\% and 0-33\%, respectively.}
 \begin{figure}
 \begin{center}
 \includegraphics[width=0.7\columnwidth,keepaspectratio]{plots/chpt7/tau9_neutron_bin_selection.eps}
-\caption[Neutron binning method]{Selections of different collision geometry with neutron number translated to energy deposition. Different colors represent different centrality selections}
+\caption[Neutron binning method with the neutral energy deposition in ZDC]{Selections of different collision geometry with neutron number translated to energy deposition. Different colors represent different centrality selections}
 \label{fig:neutronBin}
 \end{center}
 \end{figure}
@@ -332,7 +334,7 @@ the red and green lines correspond to the 33-66\% and 0-33\%, respectively.}
 33-66\%	& 237-743		&	7.5 / 2.8	& 4.4 / 1.7	\\ \hline
 66-100\%& 0-237			&	5.9 / 2.8	& 4.7 / 1.8	\\ \hline
 \end{tabular}
-\caption[Constrained geometry]{Geometry constrained by the neutron energy deposition tagged bins. Average value as well as the root mean square (RMS) for traveling length $d$ and impact parameter $b$ has been presented in this table.}
+\caption[Constrained geometric quantity with the neutron binning method]{Geometry constrained by the neutron energy deposition tagged bins. Average value as well as the root mean square (RMS) for traveling length $d$ and impact parameter $b$ has been presented in this table.}
 \label{tab:geoConstr}
 \end{table*}
 
@@ -355,9 +357,9 @@ The assumed polar angular acceptance of the ZDC is $\pm$ 4 mrad with respect to
 the gold nuclear beam direction~\cite{Accardi:2012qut}.
 Fig.~\ref{fig:neutronZDC} shows that emitted neutrons from the evaporation
 process can be $100\%$ accepted. The final state neutrons from all processes are
-marked by the black line in that plot. The green line shows neutrons from
+marked by the black solid line in that plot. The green (dash-dot) line shows neutrons from
 primary interactions. Neutrons generated by intranuclear cascade are shown in
-blue and evaporated neutrons are shown in red. It can be concluded from this
+blue (dotted) and evaporated neutrons are shown in red (dashed). It can be concluded from this
 plot that neutrons from primary interactions are mainly in the midrapidity
 region, while the forward region neutrons are dominated by the evaporated
 neutrons. The primary interaction and intranuclear cascade process can also
@@ -369,11 +371,11 @@ contamination from other process is under control.
 
 \begin{figure}
 \begin{center}
-\includegraphics[width=0.7\columnwidth]{plots/chpt7/neutron_ZDC_cuts.eps}
-\caption[$\eta$ distribution for all final-state neutrons]{$\eta$ distributions of final-state neutrons from various processes. Most of the evaporated neutrons can be accepted
+\includegraphics[width=1.0\columnwidth]{plots/chpt7/neutron_ZDC_cuts.eps}
+\caption[$\eta$ distribution for all final-state neutrons in a \eA\ collision]{$\eta$ distributions of final-state neutrons from various processes. Most of the evaporated neutrons can be accepted
 if the ZDC covers the polar angle range of $\pm$ 4 mrad marked by the
-dashed vertical line. Black lines represent all the final state
-neutrons, while the red, blue and green lines illustrate neutron distributions
+dashed vertical line. Black (solid) lines represent all the final state
+neutrons, while the red (dash), blue (dot) and green (dash-dot) lines illustrate neutron distributions
 from evaporated, intranuclear cascade and primary productions.}
 \label{fig:neutronZDC}
 \end{center}
@@ -402,45 +404,34 @@ to those pions from primary interactions.
 \begin{figure}
 \begin{center}
 \includegraphics[width=0.7\columnwidth]{plots/chpt7/accept_neutron_from_stages.eps}
-\caption[Accepted neutrons from different stages]{Number of neutron distributions
-from different interaction stages. The black line shows the total number of neutrons
+\caption[Accepted neutron number distribution from different \eA\ collision stage]{Number of neutron distributions
+from different interaction stages. The black solid line shows the total number of neutrons
 within the ZDC acceptance; neutrons from the thermal evaporation process are depicted
-by the red line, while the blue line gives the distribution from secondary
-interactions and particles generated in primary interactions are marked in green.}
+by the red dashed line, while the blue dotted line gives the distribution from secondary
+interactions and particles generated in primary interactions are marked in green (dash-dotted).}
 \label{fig:neutronStage}
 \end{center}
 \end{figure}
-
-
-
-\begin{figure*} 
-\begin{center} 
-\subfigure[]{ 
-\centering
-\includegraphics[width=0.45\columnwidth,keepaspectratio]{plots/chpt7/tau9_mostCentral_dist.eps} \label{fig:travelConstrain_central} 
-}
-\quad
-\subfigure[]{ 
-\centering
-\includegraphics[width=0.45\columnwidth,keepaspectratio]{plots/chpt7/tau9_mostCentral_bimpact.eps} \label{fig:bimpConstrain_central} 
-}
-\caption[The most central bin]
-{Binning constraint on traveling length $d$ and impact parameter $b$ for most
-central collisions (0-10\%), with forward neutron cut only (solid line) and
-neutron cut plus additional forward proton number cut (dashed line) or forward
-charged hadron number cut (dotted line). The total distribution has been marked by
-the shaded region with a magnitude scaled down by a factor 10 for illustration.
-}
-\label{fig:geoConstrain_central}
-\end{center} 
-\end{figure*}
-
 With the knowledge of the underlying traveling length for the collision geometry,
 it is possible to define the most central collision by selecting events with the
 largest neutron production, in which the incoming photon probes the densest area
 of the target. The forward proton track number from break up and the charged
 particle (mostly pions) yield in forward rapidities are also sensitive to the
-collision geometries. We will see how much we can gain as a constraint on
+collision geometries, as shown in Fig.~\ref{fig:bimp_corre_p_forCh}. 
+
+
+\begin{figure*} 
+\begin{center} 
+\includegraphics[width=0.495\textwidth]{plots/chpt7/tau9_bimpact_vs_accept_proton.eps}
+\includegraphics[width=0.495\textwidth]{plots/chpt7/tau9_bimpact_vs_accept_forward_charged.eps}
+\caption[Correlation between the impact parameter in \eA\ collision and evaporated protons or forward charged particles]
+{Correlation between the impact parameter in \eA\ collision and evaporated protons or forward charged particles.
+}
+\label{fig:bimp_corre_p_forCh}
+\end{center} 
+\end{figure*}
+
+We will see how much we can gain as a constraint on
 most central collisions if we put an additional cut on these quantities together
 with that on the forward neutrons. It may be beneficial to add the large neutron emission cut
 and the large proton or charged particle production cut at forward rapidity at
@@ -450,14 +441,27 @@ Forward charged particles are supposed to be counted by devices covering
 $4<\eta<6$. The geometry constraint in the most central collisions is
 shown in Fig.~\ref{fig:geoConstrain_central}. The shaded region displays the total
 distribution for $d$ or $b$ without any cuts. To compare with the cuts made by
-0-10\% selection, the magnitude of total distribution has be rescaled by 0.1 for the purpose of
+0-10\% selection, the magnitude of total distribution has been rescaled by 0.1 for the purpose of
 demonstration. Comparing the solid line and shaded region in
 Fig.~\ref{fig:geoConstrain_central} shows the forward neutron cut effectively finds
 the events with most central collisions. No significant enhancement can be found
 with the inclusion of the double cut method from forward proton or charged
 particles. Such ZDC accepted neutron energy would be enough to select
 the most central events.
-
+\begin{figure*} 
+\begin{center} 
+\includegraphics[width=0.495\textwidth]{plots/chpt7/tau9_mostCentral_dist.eps} \label{fig:travelConstrain_central} 
+\includegraphics[width=0.495\textwidth]{plots/chpt7/tau9_mostCentral_bimpact.eps} \label{fig:bimpConstrain_central} 
+\caption[The most central bin under a double cut method]
+{Binning constraint on traveling length $d$ and impact parameter $b$ for most
+central collisions (0-10\%), with forward neutron cut only (solid line) and
+neutron cut plus additional forward proton number cut (dashed line) or forward
+charged hadron number cut (dotted line). The total distribution has been marked by
+the shaded region with a magnitude scaled down by a factor 10 for illustration.
+}
+\label{fig:geoConstrain_central}
+\end{center} 
+\end{figure*}
 
 
 \section{Applications of collision geometry constraint at an EIC}\label{sec:application}
@@ -484,7 +488,7 @@ the nuclear medium can be studied with the semi-inclusive deep-inelastic
 scattering process off nuclei~\cite{Airapetian:2003mi,Airapetian:2007vu,Airapetian:2011jp}. Depending on the
 kinematics, the hadron formation may take place inside the nucleus, or
 outside the nucleus. In general it is assumed that the struck quark forms its
-full hadron identity with an average formation length $l_{h}\propto f(z)\nu$.
+full hadron identity with an average formation length $l_{h}\propto f(z)\nu$. $f(z)$ is a general function of $z$.
 
 The multiplicity ratio $R^{h}_{A}$ is a frequently studied quantity
 which effectively describes the nuclear medium energy loss effect. It is defined as follows:
@@ -495,7 +499,7 @@ where $N_{h}$ is the semi-inclusive production of hadrons in a given kinematics
 bin and $N_{l}$ is the yield of leptons in the same $\nu,Q^{2}$ bin. This ratio
 is defined for the hadrons production per deep-inelastic scattering event on a
 nuclear target with mass $A$ to that of the lightest isoscalar nuclear target
-deuterium.
+deuterium. $R^{h}_{A}<1$ in a nuclear medium.
 
 With a handle to constrain the traveling length in the
 collision geometry, it is possible to explore the interplay between color
@@ -508,14 +512,14 @@ directly adjusted with a traveling length $d$; if $d>l_{h}$ it is generally
 formed inside the nucleus and the hadron yield will be suppressed while for
 $d<l_{h}$ the medium modification is supposed to be small. With the bin
 selection of collision geometry, we have extracted the $d$ distribution from
-these bins as input to an energy loss model~\cite{Salgado:2003gb}. Thereby,
+these bins as input to an energy loss model~\cite{Salgado:2003gb} (also see Sec.~\ref{sec:energy_loss} for more details). Thereby,
 strong nuclear medium dependence is expected in the multiplicity ratio
 measurement, shown in Fig.~\ref{fig:energyLoss}.
 
 \begin{figure}
 \begin{center}
 \includegraphics[width=0.7\columnwidth,keepaspectratio]{plots/chpt7/energyloss_Hermes_nu_qHat_0.85_tau_9.eps}
-\caption[Energy loss measurement with centrality bin]{Multiplicity ratio as a function of $\nu$ with the traveling length constraint. The black line represents the expected value for minimum bias events, and projected result from three centrality bins are shown in blue, green and red according to our selection discussed in Sect.~\ref{sec:geoCategory}. Hermes data points~\cite{Airapetian:2007vu} are shown in the plot with black dots.}
+\caption[Energy loss measurement on Xenon target with several centrality bins versus $\nu$.]{Multiplicity ratio as a function of $\nu$ with the traveling length constraint. The black line represents the expected value for minimum bias events, and projected result from three centrality bins are shown in blue, green and red according to our selection discussed in Sec.~\ref{sec:geoCategory}. HERMES data points~\cite{Airapetian:2007vu} are shown in the plot with black dots.}
 \label{fig:energyLoss}
 \end{center}
 \end{figure}
@@ -536,7 +540,7 @@ additional handle, together with the kinematics control, for studying the satura
 Dihadron correlations in \eA\ are a way to investigate the saturation effect. By
 selecting the trigger associate particle pairs with certain $p_{T}$, one can
 explore the underlying jet properties and the interplay with the saturation
-scale $Q_{s}$. The correlation function is constructed as shown in~\ref{chp:dihadron}:
+scale $Q_{s}$. The correlation function is constructed as shown in Chap.~\ref{chp:dihadron}:
 \begin{equation}
 C(\Delta\phi)=\frac{N_{pair}(\Delta\phi)}{N_{trig}}.
 \end{equation}
@@ -571,7 +575,7 @@ for a minimum bias (0-100\%) estimation. With the current statistical uncertaint
 \includegraphics[width=0.45\columnwidth,keepaspectratio]{plots/chpt7/dihadron_ratio_centrality_tau_9_lumi_10fb_20x100.eps} \label{fig:dihadron_ratio} 
 }
 
-\caption[Dihadron with centrality bin]{Saturation effects in the dihadron correlation measurements with the most central collisions. (a) The correlation functions for \ep, $e+$Au 0-100\% and $e+$Au 0-10\% at 20 GeV$\times$100 GeV are shown in black, blue and red curves with the statistical uncertainty from an integrated luminosity of 10 fb$^{-1}$; (b) the ratio of the correlation function for $e+$Au 0-10\% divided by 0-100\%.}
+\caption[Dihadron correlation function with centrality bin cut.]{Saturation effects in the dihadron correlation measurements with the most central collisions. (a) The correlation functions for \ep, $e+$Au 0-100\% and $e+$Au 0-10\% at 20 GeV$\times$100 GeV are shown in black, blue and red curves with the statistical uncertainty from an integrated luminosity of 10 fb$^{-1}$; (b) the ratio of the correlation function for $e+$Au 0-10\% divided by 0-100\%.}
 \label{fig:dihadron_centrality}
 \end{center}
 \end{figure*}
@@ -583,7 +587,7 @@ for a minimum bias (0-100\%) estimation. With the current statistical uncertaint
 \section{Summary} \label{sec:summary}
 
 We have presented detailed studies on the determination of collision geometry
-in \eA\ collisions. Utilizing the DPMJET3 Monte Carlo generator, we have found a
+in \eA\ collisions. Utilizing the DPMJET Monte Carlo generator, we have found a
 correlation between the traveling length and the number of neutrons evaporated
 from the nuclear remnant. This neutron number distribution can be measured with
 a ZDC in the Au-going direction with the systematics under control. All the

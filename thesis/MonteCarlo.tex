@@ -10,26 +10,26 @@ measurement. As to the dihadron correlation measurement, it is the detector
 coverage and resolution that we should take into consideration. Second, we will
 rely on the Monte Carlo simulation method to evaluate the detector response
 effect. Generally, this type of study is usually based on
-GEANT~\cite{Brun:1978fy}. In our case, we use a simplified fast smearing method~\cite{eicsmear}.
+GEANT~\cite{Brun:1978fy}. In our case, we use a simplified fast smearing method~\cite{EICsmear}.
 In addition, we want to make some phenomenological predictions which are very
 hard to be calculated with perturbative theory and can only be studied based on
 some Monte Carlo models. In the end, with the event by event level description
 of Monte Carlo generators we can estimate the statistical error, based on which
-one can decide how much time does it take to make a conclusive measurement.
+one can decide how much time it takes to make a conclusive measurement.
 
 This chapter describes the Monte Carlo event generators we employed to simulate
-the a physical event and also our fast smearing method to estimate the detector response.
+physical events and also our fast smearing method used to estimate the detector response.
 
 
 \section{The Monte Carlo event generator for \ep\ } \label{sec:MC_ep}
 For the \ep\ collisions, we use the PYTHIA event generator~\cite{Sjostrand:2006za}. The event generation
-process of PYTHIA can be summarized as follows (see Fig.~\ref{fig:PYTHIA_generation_scheme} for an example)
+process of PYTHIA can be summarized as follows (see Fig.~\ref{fig:PYTHIA_generation_scheme} for an example).
 \begin{figure}
 \centering
-\includegraphics[width=0.7\textwidth]{plots/chpt5/PYTHIA_generation_scheme.png} 
-\caption[Event generation in PYTHIA] {
-A schematic view of the event generation process in PYTHIA: Hard scatering Matrix Element (ME), 
-Initial-state parton shower (ISPS), Final-state parton shower (FSPS) and Hadronization process (HADR). 
+\includegraphics[width=0.7\textwidth]{plots/chpt5/PYTHIA_generation_scheme.png}
+\caption[An illustration of the event generation process in PYTHIA] {
+A schematic view of the event generation process in PYTHIA: hard scatering matrix element (ME), 
+initial-state parton shower (ISPS), final-state parton shower (FSPS) and hadronization process (HADR). 
 This plot is from Ref.~\cite{Hansson:2007zz} }
 \label{fig:PYTHIA_generation_scheme}
 \end{figure}
@@ -47,7 +47,7 @@ is an approximation to the higher-oder QCD process at the leading-log level.
 \item Hadronization and decay process. The generated final-state partons and
 beam remnants will fragment into colorless hadrons, which is a non-perturbative process
 and determined from the string model~\cite{Andersson:1983ia} in PYTHIA implementation. Unstable particles decay
-until reaching a set of stable final-state hadrons
+until reaching a set of stable final-state hadrons.
 \end{itemize}
 
 The simulation part of this study is based on the PYTHIA-$6.4$ Monte Carlo program,
@@ -67,7 +67,7 @@ into the simulation task for \eA\ collisions. DPMJET is treating the eA
 interaction based on individual photon nucleon events simulated by
 PHOJET~\cite{Engel:1994vs} in Gribov-Glauber multiple scattering
 formalism~\cite{Engel:1996yb}. In the individual photon nucleon interactions a
-photon is assumed be divided into a direct photon part and a hadronic part. The
+photon is assumed to be divided into a direct photon part and a hadronic part. The
 description of hadronic photon on nucleon is based on the Generalized Vector
 Dominance Model (GVDM). Direct photon events include Photon Gluon Fusion (PGF)
 and QCD Compton (QCDC) process. A steady transition is allowed between direct
@@ -88,7 +88,7 @@ covered by a proposed EIC.
 
 Within the flexible program design of PYTHIA, we are also allowed to implement
 more features such as the nuclear PDF and energy loss effect in cold nuclear
-matter to accommodate the nonsaturation nuclear effect. 
+matter to accommodate the non-saturation nuclear effect. 
 With everything assembling together, we can build a hybrid Monte Carlo generator reusing existing
 code of DPMJET and PYTHIA at different levels with EPS09 nuclear PDF~\cite{Eskola:2009uj}
 and the cold nuclear medium energy loss effect~\cite{Salgado:2003gb}. The physical process of an \eA\ collision is
@@ -104,14 +104,14 @@ generated as follows:
 
 \begin{figure}
 \centering
-\includegraphics[width=0.7\textwidth]{plots/chpt5/eA_hybrid_chart.png} 
-\caption[The hybrid \eA\ generator setup] {
-A illustration of the hybrid \eA\ Monte Carlo generator layout structure. }
+\includegraphics[width=1.0\textwidth]{plots/chpt5/eA_hybrid_chart.png} 
+\caption[An illustration of the hybrid \eA\ Monte Carlo generator design layout] {
+An illustration of the hybrid \eA\ Monte Carlo generator design layout. }
 \label{fig:MC_hybrid_chart}
 \end{figure}
 
 The physical generation flow can be visualized in Fig.~\ref{fig:MC_hybrid_chart}.
-In this model we have two significant nonsaturation based nuclear effects implemented which are relevant to the dihadron correlation studies: the nuclear PDF and the cold nuclear medium energy loss effect.
+In this model we have two significant non-saturation based nuclear effects implemented which are relevant to the dihadron correlation studies: the nuclear PDF and the cold nuclear medium energy loss effect.
 
 \subsection{Nuclear parton distribution function}
 In the hybrid Monte Carlo generator, we use a next-to-leading order (NLO) global
@@ -126,8 +126,8 @@ $x\lesssim 0.1$, (b) antishadowing; excess around $0.1\lesssim x \lesssim 0.3$,
 motion; an excess towards $x=1$. While the quark antiquark densities are
 relatively well constrained, the modifications to gluon distributions are not
 directly measured. Current nPDF parametrizations give wide variations in the
-nuclear gluon densities especially in the small $x$ region due to the lack the
-nuclear DIS data in the corresponding region. However, hopefully with the come
+nuclear gluon densities especially in the small $x$ region due to the lack of the
+nuclear DIS data in the corresponding region. However, hopefully with the advent
 of the EIC era, the gluon density uncertainty can be largely constrained.
 
 In the framework of EPS09 PDF analyses, nuclear PDF is defined with the following form
@@ -144,35 +144,37 @@ distribution can be obtained by average according to the corresponding mass
 number $A$ and charge number $Z$.
 
 
-\subsection{Cold nuclear medium energy loss}
+\subsection{Cold nuclear medium energy loss} \label{sec:energy_loss}
 The fragmentation is another piece needs to be modified by the nuclear effect
 apart from that on the parton distribution function as in nuclear deep inelastic
 scattering process. Because of the non-perturbative nature of hadronization, it
-is impossible to studied directly from first principle calculations. People have
+is impossible to be obtained directly from the first principle calculations. People have
 to rely on the phenomenological models fitted to data to describe it. The models
-are based on the following processes: hadron absorption, energy loss and medium
-modified fragmentation functions. Hadron absorption models employ formation
+are based on the following aspects: hadron absorption, parton energy loss and medium
+modified fragmentation function. Hadron absorption models employ formation
 times and absorption cross sections for the hadrons produced in the nuclear
-environment, while parton energy loss model usually use QCD inspired
+environment, while parton energy loss models usually use QCD inspired
 calculations characterizing gluon emission off highly virtual hard partons in
 the nuclear environment.
 
 In the hybrid Monte Carlo generator, a hard parton energy loss effect is
 included following the Parton Quenching Model
-implementation~\cite{Dupre:2011afa} based on
-the extended the BDMPS calculations~\cite{Salgado:2003gb}. One good thing about the parton energy loss is
-that most of the published work is originally focused on heavy ion collisions
-and the characterization of quark-gluon plasma, but usually can be easily
-transportable to nuclear DIS case which allows a precise comparison with
-experiments because of the better determined initial conditions.
+implementation~\cite{Dupre:2011afa} based on the extended BDMPS
+calculations~\cite{Salgado:2003gb}. The parton energy loss model is originally
+focused on heavy ion collisions and the characterization of quark-gluon plasma
+(QGP). But it can be easily transportable to nuclear DIS case from which better
+determined initial conditions can be extracted providing Based on the knowledge
+of the extracted initial conditions, a precise comparison with experiments
+involving heavy ion collisions can be made to describe the formation of the QGP.
 
-In the energy loss picture, a medium is described by its transport coefficient,
-defined as the average medium induced transverse momentum square per-unit path
+In the energy loss picture, a medium is described by its transport coefficient $\hat{q}$,
+defined as the average medium induced transverse momentum square per unit path
 length of a hard parton:
 \begin{equation}
 \hat{q} = \left\langle k^{2}_{\perp}\right\rangle _{medium}/\lambda,
 \end{equation}
-where $\lambda$ is the mean free path. The characteristic energy loss scale is set by:
+where $\lambda$ is the mean free path and $k_{\perp}$ denotes the transverse
+momentum of the emitted gluon. The characteristic energy loss scale is set by:
 \begin{equation}
 \omega_{c} = \frac{1}{2}\hat{q}L^{2}.
 \end{equation}
@@ -182,19 +184,27 @@ total energy, a dimensionless quantity $R$ is introduced:
 R = \frac{2\omega^{2}_{c}}{\hat{q}L} = \omega_{c}L.
 \end{equation}
 $L$ is the path length that parton traverses in the medium, determined by the
-coordinate of that nucleon involved in the certain hard interaction sampled from
-a wood-saxon nucleus geometry. To consider the nuclear medium geometry, all we
+coordinate of the nucleon involved in certain hard interaction sampled from
+a Woods-Saxon nucleus geometry. To consider the nuclear medium geometry, all we
 have to do is to average over the density profile of the matter traversed by the
-parton. From the parameters defined above, one can have a energy loss
-probability distribution:
+parton. The probability for a parton to lose energy $\Delta E$ through $n$ gluon emissions can be
+written as:
 \begin{equation}
-P(\Delta E; R, \omega_{c}) = p_{0}(R)\delta(\Delta E) + p(\Delta E; R, \omega_{c}),
+P(\Delta E)=\sum^{\infty}_{n=0}\frac{1}{n!}[\prod^{n}_{i=1}\int d\omega_{i}\frac{dI(\omega_{i})}{d\omega}]
+\times(\Delta E-\sum^{n}_{i=1}\omega_{i})\exp[-\int d\omega\frac{dI}{d\omega}],
 \end{equation}
-where $p_{0}$ is the probability of no medium induced radiation happens to the parton.
+where $\omega_{i}$ is the emitted gluon energy and the gluon energy spectrum $\frac{dI}{d\omega}$
+depends on the parameters we defined above. The probability has a discrete part and
+a continuous part as follows:
+\begin{equation}
+P(\Delta E) = p_{0}\delta(\Delta E) + p(\Delta E),
+\end{equation}
+where $p_{0}$ is the discrete probability that no medium induced radiation
+happens to the parton.
 
 In our simulation, the generation of energy loss iterates as:
 \begin{itemize}
-	\item generation an event list at parton level from the Monte Carlo package;
+	\item generate an event list at parton level from the Monte Carlo package;
 	\item determine two input parameters, $\omega_{c}$ and $R$ by the generated event information;
 	\item sample an energy loss $\Delta E$ according to the $P(\Delta E)$ determined in the last step;
 	\item dump the modified parton system to the JETSET fragmentation module, which gives us the final particle list.
@@ -206,6 +216,18 @@ In our simulation, the generation of energy loss iterates as:
 %
 
 \section{EIC fast smearing package}
+
+
+\begin{figure}
+\centering
+\includegraphics[width=0.8\textwidth]{plots/chpt5/smearing framework.png}
+\caption[An illustration of the event smearing strategy in eic-smear package] {
+A schematic view of the event smearing process implemented in eic-smear package. 
+}
+\label{fig:smear_layout}
+\end{figure}
+
+
 When a detector system tracks a particle, the information of this particle
 (momentum, energy, particle id, and so on) has to be reconstructed from the electronic
 signals received and analyzed at the detector read out. How well the particle
@@ -226,25 +248,8 @@ Monte Carlo event generator. It is intended to be extremely flexible,
 allowing you to change what type of smearing you want to simulate quickly and
 painlessly.
 
-
-\begin{table} 
-\centering 
-\caption[Assumed resolutions for fast smearing setup]{This is the
-assumed resolution for the devices to be used in our dihadron correlation simulations.}
-\label{tab:EIC_smear} 
-\begin{tabular}{| l | c | c | } \hline
-Device	& Acceptance & resolution \\ \hline
-Barrel tracking  	&  $|\eta|<1.5$  &  $\sigma_{p}/p=0.1\%$   \\  
-Endcap tracking    &  $1.5<|\eta|<3$  &   $\sigma_{p}/p=1\%$   \\  
-ECal   & $-1<\eta<4.5$  &  $\sigma_{E}/E=12\%/\sqrt{E}$   \\  
-ECal  & $-4.5<\eta<-1$ & $\sigma_{E}/E=1.8\%/\sqrt{E}$   \\ 
-HCal  & $2<\eta<4.5$ & $\sigma_{E}/E=38\%/\sqrt{E}$   \\ \hline
-\end{tabular} 
-\end{table}
-
-
 As implemented in eic-smear, it is much faster to run than a full detector
-simulation (e.g. Geant), both in terms of user time spent specifying the
+simulation (e.g. GEANT), both in terms of user time spent specifying the
 detector properties and in CPU time spent processing events. However,  the
 smearing code is not intended as a replacement for full detector simulations.
 Rather, it is a complimentary tool for roughly assessing the impact of changes
@@ -253,9 +258,26 @@ rapid, but less detailed, than a full detector simulation. It is designed to
 answer questions like given a known detector resolution, how well can we
 measure some physics variables. 
 
+\begin{table} 
+\centering 
+\begin{tabular}{| l | c | c | } \hline
+Device	& Acceptance & resolution \\ \hline
+Barrel tracking  	&  $|\eta|<1.5$  &  $\sigma_{p}/p=0.1\%$   \\  
+Endcap tracking    &  $1.5<|\eta|<3$  &   $\sigma_{p}/p=1\%$   \\  
+ECal   & $-1<\eta<4.5$  &  $\sigma_{E}/E=12\%/\sqrt{E}$   \\  
+ECal  & $-4.5<\eta<-1$ & $\sigma_{E}/E=1.8\%/\sqrt{E}$   \\ 
+HCal  & $2<\eta<4.5$ & $\sigma_{E}/E=38\%/\sqrt{E}$   \\ \hline
+\end{tabular} 
+\caption[The
+assumed resolution for the devices to be used in our dihadron correlation simulations]{The
+assumed resolution for the devices to be used in our dihadron correlation simulations.}
+\label{tab:EIC_smear} 
+\end{table}
+
+
 In this method, a virtual device ``smearer" is defined to smear a physical
-quantity according to the user specified resolution if the particle is accepted
-within the smearer's coverage. A smearer should not necessarily be considered to
+quantity $X$ according to the user specified resolution if the particle is accepted
+within the smearer's coverage as shown in Fig.~\ref{fig:smear_layout}. A smearer should not necessarily be considered to
 be a direct analogue of a single real-world detector subsystem (though in some
 cases it may be). Rather, it is a more abstract representation of some element
 of the whole detector's performance. For example, while a user may define a
@@ -266,7 +288,6 @@ subsystems.
 We customized a simple smearing detector for our dihadron correlation
 measurement based on the EIC model detector geometry setup. The assumed
 resolutions for these devices are listed in Tab.~\ref{tab:EIC_smear}.
-
 
 
 

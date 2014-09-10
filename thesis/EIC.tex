@@ -43,8 +43,8 @@ design is found at BNL as shown in Fig.~\ref{fig:collider_eRHIC}.
 \begin{figure}
 \centering
 \includegraphics[width=0.9\textwidth]{plots/chpt4/collider_eRHIC.png}
-\caption[eRHIC collider design]{
-The collider design for eRHIC. The plot is from BNL-CAD eRHIC group.}
+\caption[A layout of the eRHIC collider design]{
+The collider design for eRHIC. The plot is from Ref.~\cite{Aschenauer:2014a}.}
 \label{fig:collider_eRHIC}
 \end{figure}
 The current eRHIC machine design allows us to have an electron beam at the
@@ -53,7 +53,7 @@ Meanwhile, the existing RHIC facility is capable of providing a proton beam with
 70\% polarization at 100-250 GeV. Unpolarized light ions (e.g. dueterium,
 silicon) and heavy ions (gold, uranium) are also available to be accelerated to
 50-100 GeV/nucleon. There is also the possibility to accelerate the polarized
-light ions ($He^{3}$) up to an energy of 167 GeV/nucleon. The full range of
+light ions (such as $^{3}$He) up to an energy of 167 GeV/nucleon. The full range of
 proton/ion beam energies will be accessible from the beginning of operations,
 while the electron beam energy will start with 10-15 GeV and later be increased
 to 20 GeV. As a result, the available beam energies altogether provide an
@@ -62,12 +62,13 @@ accessible center of mass energy range 30-145 GeV.
 
 
 \subsection{An eRHIC model detector}
-To fulfill the requirements on the detector postulated by different physics processes, a generic model detector design has been developed and shown in Fig.~\ref{fig:detector_eRHIC}.
+To fulfill the requirements on the detector postulated by different physics processes, 
+a generic model detector design has been developed as shown schematically in Fig.~\ref{fig:detector_eRHIC}.
 \begin{figure}
 \centering
 \includegraphics[width=0.9\textwidth]{plots/chpt4/eRHIC_model_detector.png}
-\caption[eRHIC detector design]{
-Schematics view of the model detector design for eRHIC. The plot is from BNL eRHIC study group.}
+\caption[A schematic view of the eRHIC detector design]{
+Schematic view of the model detector design for eRHIC. This plot is from Ref.~\cite{Aschenauer:2014a}.}
 \label{fig:detector_eRHIC}
 \end{figure}
 
@@ -81,16 +82,15 @@ and silicon trackers spanning a range $-4<\eta<4$, shown in
 Fig.~\ref{fig:tracking_eRHIC}. It is very important to have excellent momentum
 resolution over a wide-rapidity range. 
 \begin{itemize}
-\item Backward/Forward Silicon Tracker: $2<|\eta|<4$, designed with 5-7 MAPS 
-(Monolithic Active Sensor Pixels) technology discs.
+\item Backward/Forward Silicon Tracker: $2<|\eta|<4$, designed with 5-7 
+monolithic active sensor pixels (MAPS) technology discs.
 
 \item Backward/Forward GEM Tracker: $1.5<|\eta|<3$, designed with 2-3 GEM tracker discs.
 
 \item TPC: $|\eta|<1.5$, deliver hits for pseudorapidity up to $|\eta|\sim2$, but the
 range with sufficient number of hits is indicated as above. 
 
-\item Vertex Silicon Tracker: $|\eta|<1$, to be equipped with 4-6 layers of MAPS silicon sensors
-similar to the STAR HFT or ALICE ITS upgrade.
+\item Vertex Silicon Tracker: $|\eta|<1$, to be equipped with 4-6 layers of MAPS silicon sensors.
 
 \end{itemize}
 
@@ -98,24 +98,25 @@ similar to the STAR HFT or ALICE ITS upgrade.
 
 
 \begin{itemize}
-\item Electromagnetic Calorimeter (ECal). The end-cap and barrel regions of
-the detector will be equipped with electromagnetic calorimeters covering
-$-4<\eta<4$. The different electromagnetic calorimeters have different technologies to account for the different requirements. 
+\item Electromagnetic Calorimeter (ECal). The end-cap and barrel regions of the
+detector will be equipped with electromagnetic calorimeters covering
+$-4<\eta<4$. The different electromagnetic calorimeters have different
+technologies to account for the different requirements.
 
 
 \begin{itemize}
 \item Forward ECal: $1<\eta<4$, the requirements for the forward ECal are relatively
-moderate as its main function is to detect leptons from the decay of VMs and
+moderate as its main function is to detect leptons from the decay of vector mesons and
 photons from dominately $\pi^{0}$ decay. Currently the idea is to have a scintillating fiber tungsten
 powder sampling calorimeter. 
 \item Barrel ECal: $-1<\eta<1$, this calorimeter needs to provide PID for the scattered lepton at high $Q^{2}$ and leptons from VM-decays, the energy of these leptons will be determined from the tracking detectors. 
 The same technology as the forward ECal has been considered for the barrel ECal.
 \item Backward ECal: $-4<\eta<-1$, this calorimeter needs to provide PID for the scattered
 lepton. It is especially important for the scattered lepton at low $Q^{2}$. At
-higher center-of-mass energies photons from $\pi^{0}$ decays, the DVCS and BH
+higher center-of-mass energies photons from $\pi^{0}$ decays, the deeply virtual Compton scattering and Bethe-Heitler
 process are in the acceptance of the backward ECal. Since the requirements in
-energy and angular resolution are most demanding, it is advised to have a PWO
-crystal calorimeter
+energy and angular resolution are most demanding, it is advised to have a lead tungstate (PWO)
+crystal calorimeter.
 \end{itemize}
 \end{itemize}
 
@@ -135,17 +136,18 @@ when ECal is not enough to separate leptons from hadrons.
 \begin{figure}
 \centering
 \includegraphics[width=0.9\textwidth]{plots/chpt4/eRHIC_model_tracking.png}
-\caption[Tracking system of the eRHIC model detector design]{
-Schematic view of the tracking system used in the model detector design for eRHIC. The plot is from BNL eRHIC study group.}
+\caption[A schematic view of the tracking system in the eRHIC model detector design]{
+Schematic view of the tracking system used in the model detector design for eRHIC. This plot is from Ref.~\cite{Aschenauer:2014a}.}
 \label{fig:tracking_eRHIC}
 \end{figure}
 
 
 Particle identification for different purpose relies on different combinational
 method. $\pi, K, p$ separation can be achieved in central rapidity region
-$\eta<1$ with DIRC or proximity focusing Aerogel-RICH plus the $dE/dx$ from TPC
-energy loss. The separation in $1<|\eta|<3$ is obtained in RICH, where a very
-good meomentum resolution from the tracking is needed.
+$\eta<1$ with the detection of internally reflected Cherenkov light (DIRC) or proximity
+focusing Aerogel-RICH plus the specific energy loss $dE/dx$ from TPC. The separation in
+$1<|\eta|<3$ is obtained in RICH, where a very good meomentum resolution from
+the tracking is needed.
 
 Lepton identification mainly relies on the $E/p$ in the region $-3<\eta<3$. For
 $1<|\eta|<3$, additional HCal response and $\gamma$ suppression via tracking can
@@ -162,13 +164,13 @@ eSTAR and ePHENIX~\cite{Adare:2014aaa} in the future with some upgrades.
 
 \begin{figure}
 \centering
-\includegraphics[width=0.8\textwidth]{plots/chpt4/eSTAR_layout.png}
-\caption[Layout of eSTAR detector concept]{
-eSTAR layout with proposed upgrades. Electron beam is from right to left while hadron beam is from let to right. The plot is Ref.~\cite{star_LoI}.}
+\includegraphics[width=1.0\textwidth]{plots/chpt4/eSTAR_layout.png}
+\caption[A layout of the eSTAR detector concept]{
+eSTAR layout with proposed upgrades. Electron beam is from right to left while hadron beam is from let to right. The plot is from Ref.~\cite{Abelev:eSTAR}.}
 \label{fig:eSTAR_layout}
 \end{figure}
 
-The proposed eSTAR detector configuration has been shown in
+The proposed eSTAR detector configuration is shown in
 Fig.~\ref{fig:eSTAR_layout}. To identify the scattered lepton in $|\eta|>1$,
 endcap TOF on both sides covering $1<|\eta|<2$ and GEM based TRD covering
 $-2<\eta<-1$ will be added. Also, before the completion of RHIC program, a
@@ -176,7 +178,7 @@ forward tracking system with associated forward calorimeters will be installed.
 
 The ePHENIX detector is going to reuse the superconducting solenoid and the
 calorimeter system of sPHENIX, the proposed upgrade of PHENIX focusing on jet
-physics. A possible layout has been shown in Fig.~\ref{fig:ePhenix_layout}.
+physics. A possible layout is shown in Fig.~\ref{fig:ePhenix_layout}.
 Other than the reusable subsystems from sPHENIX, a few more new subsystems will
 be added to the ePHENIX detector. The GEM detectors are needed in both electron
 and hadron going direction, providing tracking information for the region
@@ -184,9 +186,9 @@ $|\eta|>1$. Endcap electromagnetic calorimeters will be equipped to have full
 coverage over $-4<\eta<4$.
 \begin{figure}
 \centering
-\includegraphics[width=0.8\textwidth]{plots/chpt4/ePhenix_layout.png}
-\caption[Layout of ePHENIX detector concept]{
-A cross view of the ePHENIX detector concept. The plot is Ref.~\cite{Adare:2014aaa}.}
+\includegraphics[width=1.0\textwidth]{plots/chpt4/ePhenix_layout.png}
+\caption[A layout of the ePHENIX detector concept]{
+A cross view of the ePHENIX detector concept. The plot is from Ref.~\cite{Adare:2014aaa}.}
 \label{fig:ePhenix_layout}
 \end{figure}
 

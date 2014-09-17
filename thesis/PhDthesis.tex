@@ -1,4 +1,7 @@
 \documentclass[PhD]{uclathes}
+
+%\documentclass[12pt, epsf, twoside, epsfig, psfig,a4paper]{report} %ziQiang
+
 \pdfpagewidth 8.27in
 \pdfpageheight 11.69in
 
@@ -8,130 +11,22 @@
 %abs_ch,abs_en,introduction,facilities,analysis,results,discussion}
 %discussion}
 
-%define some new commands used quite often
-\newcommand{\pt}{\mbox{$p_T$ }}
-\newcommand{\kt}{\mbox{$k_T$ }}
-\newcommand{ \ptsq }{ $p_{T}^{2}$ }
-\newcommand{ \qsq }{ $Q^{2}$ }
-\newcommand{ \gevsq }{\mbox{GeV$^{2}$}}
-\newcommand{\ep}{\mbox{$e+p$}}
-\newcommand{\eA}{\mbox{$e+$A}}
-\newcommand{\eAu}{\mbox{$e+$Au}}
-\newcommand{\dA}{\mbox{$d+$Au}}
-\newcommand{\pA}{\mbox{$p+$A}}
-\newcommand{ \pion }{ $\pi^{0}$ }
+\include{setup/newcommand}
+\include{setup/packages}
+\include{setup/pageStyleSetup}
 
-%use only in math mode
-\newcommand{ \kp }{ k^{\prime} }
-\newcommand{ \gammap }{ \gamma^{*}+N\rightarrow h_{1}+h_{2}+X }
-\newcommand{ \gammaA }{ \gamma^{*}+A\rightarrow h_{1}+h_{2}+X }
-\newcommand{ \phase }{ dz_{h1}dz_{h2}d^{2}p_{h1\perp}d^{2}p_{h2\perp}  }
-\newcommand{\pionp}{\pi^{+}}
-\newcommand{\pionn}{\pi^{-}}
-%\newcommand{ \vtwos}{$v_{2}$}
-%\newcommand{ \pts}{$p_T$}
-%\newcommand{ \rar }{\rightarrow}
-%\newcommand{ \lar }{\leftarrow}
-%\newcommand{ \as }{$\alpha_{s}$}
-%\newcommand{ \dAu }{$d$+Au}
-%\newcommand{ \pp }{$p$+$p$ }
-%\newcommand{ \AuAu }{Au+Au}
-\newcommand{ \auau }{Au + Au }
-\newcommand{\pp}{$p + p$}
-%\newcommand{ \CuCu }{Cu+Cu}
-%\newcommand{ \cucu }{Cu+Cu }
-\newcommand{ \sNN }{ \sqrt{s_{NN}} }
-%\newcommand{ \sqrtsNN}{$\sqrt{s_{NN}}$ }
-%\newcommand{ \chg }{$h^{\pm}$ }
-%\newcommand{ \chgs }{$h^{\pm}$}
-%\newcommand{ \ks }{$K_{S}^{0}$}
-%\newcommand{ \lam }{$\Lambda$}
-%\newcommand{ \lbar }{$\bar{\Lambda}$}
-%\newcommand{ \llbar }{$\Lambda + \bar{\Lambda}$}
-%\newcommand{ \cas }{$\Xi$}
-%\newcommand{ \xxi }{$\Xi^- + \overline{\Xi}^+$}
-%\newcommand{ \oom }{$\Omega + \bar{\Omega}$}
-%\newcommand{ \omeg }{$\Omega$}
-%\newcommand{ \vtwotwo }{{v_2\{2\}}}
-%\newcommand{ \vtwofour }{{v_2\{4\}}}
-%\newcommand{ \vtwozdc }{v_2\{\mathrm{ZDC-SMD}\}}
-%\newcommand{ \vtwoEcc} {v_2/\varepsilon}
-%\newcommand{ \density} {1/S\ dN/dy}
-%\newcommand{ \fracHydro} {[\frac{v_{2}}{\varepsilon}]/[\frac{v_{2}}{\varepsilon}]_{\mathrm {hydro}}}
-%\newcommand{ \sigmacs} {\sigma c_s}
-\newcommand{\rmd}{\mathrm{d}}
-\newcommand{\bs}{\boldsymbol}
-\newcommand{\dedx}{\mathrm{d}E/\mathrm{d}x}
+%\include{ziQiang}
 
-%\def \epart {$\varepsilon_{\mathrm{part}}$ }
-%\def \eparts {$\varepsilon_{\mathrm{part}}$}
-%\def \eparttwo {$\varepsilon_{\mathrm{part}}\{2\}$ }
-%\def \eparttwos {$\varepsilon_{\mathrm{part}}\{2\}$}
-%\def \lt {\mbox{$<$} }
-%\def \gt {\mbox{$>$} }
-%\def \npart {$N_{\mathrm{part}}$}
-%\newcommand{\ket}{$m_{T} - m$ }
-%\newcommand{\kets}{$m_{T} - m$}
-%\def \sims   {$\sim$~}
-%\def \GeVc {\mbox{$\mathrm{GeV}/c$}}
-%\def \MeVc {\mbox{$\mathrm{MeV}/c$}}
-\def\newblock{\hskip .11em plus .33em minus .07em}
-\newcommand{\mev}{\mega\electronvolt}
-\newcommand{\gev}{\giga\electronvolt}
-\newcommand{\fm}{\femto\meter}
-\newcommand{\ach}{A_{ch}}
-
-\usepackage{CJK} %use chinese character
-
-%\usepackage{pinyin}
-%for tables
-\usepackage{longtable}
-\usepackage{multirow} %multirows in the table
-\usepackage{array} %extends the options for column formats in tables
-%\usepackage{caption}
-\usepackage{amssymb}
-%\usepackage{amsthm}
-%\usepackage{revsymb}
-%\usepackage{rotate}
-\usepackage{epsfig}
-\usepackage{epstopdf}
-%\usepackage{eepic}
-%\usepackage{epic}
-\usepackage{graphics}
-\usepackage{graphicx}
-\usepackage{grffile} %deal with fig name with ".,_ " .etc...
-%\usepackage[center]{caption2}
-%\usepackage{wrapfig}
-%\usepackage{doublespace}
-%\usepackage{multicols}
-%\usepackage{supertabular}
-\usepackage{amsmath}
-\usepackage{mathrsfs}
-\usepackage{MnSymbol}
-%\usepackage{indentfirst}
-\usepackage{fancyhdr}
-\usepackage{comment}
-\usepackage[squaren]{SIunits}
-\usepackage{color}
-%\definecolor{ColorName}{rgb}{r,g,b}
-\usepackage{subfigure}
-\usepackage{url} %add url to references
-\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue]{hyperref}
-
-%===========================================================================
-\pagestyle{fancy} \rhead{} \chead{}
-\lhead{\includegraphics[height=16mm]{plots/title.pdf}} \rfoot{}
-%\lhead{\includegraphics[height=16mm]{plots/CCNULogo.pdf}} \rfoot{}
-\cfoot{\thepage} \lfoot{}
 \begin{document}
-
-\ifx\href\undefined\else\hypersetup{linktocpage=true}\fi
 
 \begin{CJK*}{UTF8}{gbsn}
 
 % preliminary page info
 %\graphicspath{{plots/}} %not used too slow
 %\makeintropages
+
+
+    
 \pagenumbering{gobble}
 \include{title_ch}
 \include{title_en}

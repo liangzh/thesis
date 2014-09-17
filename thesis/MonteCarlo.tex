@@ -42,7 +42,7 @@ have a hard interaction based on the matrix element for the specific Feynman dia
 determining the main kinematic feature of this event. For the PYTHIA generator, this
 matrix element is calculated at the leading order.
 \item Initial-state and final-state parton shower. In the parton shower model, partons
-before and after hard scattering may have initial-state and final-state radiations respectively. It
+before and after hard scattering may have initial-state and final-state radiations, respectively. It
 is an approximation to the higher-oder QCD process at the leading-log level. 
 \item Hadronization and decay process. The generated final-state partons and
 beam remnants will fragment into colorless hadrons, which is a non-perturbative process
@@ -89,7 +89,7 @@ covered by a proposed EIC.
 Within the flexible program design of PYTHIA, we are also allowed to implement
 more features such as the nuclear PDF and energy loss effect in cold nuclear
 matter to accommodate the non-saturation nuclear effect. 
-With everything assembled together, we can build a hybrid Monte Carlo generator reusing existing
+With everything assembled together, we can build a hybrid Monte Carlo \eA\ generator reusing existing
 code of DPMJET and PYTHIA at different levels with EPS09 nuclear PDF~\cite{Eskola:2009uj}
 and the cold nuclear medium energy loss effect~\cite{Salgado:2003gb}. The physical process of an \eA\ collision is
 generated as follows:
@@ -97,8 +97,8 @@ generated as follows:
 \begin{itemize}
     \item To begin with, a nucleon is sampled from the whole nucleus according to the nuclear geometry implemented in DPMJET.
     \item The elementary interaction of the incoming electron and the selected nucleon will be simulated according to the modules as described in PYTHIA (see Sec.~\ref{sec:MC_ep}).
-    \item Before JETSET (the package responsible for parton fragmentation in PYTHIA) takes care of the final parton system in the last step, a cold nuclear medium energy loss effect will be performed to the hard scattering partons. 
-    \item As we already have the particles generated for the elementary interaction from PYTHIA, we will dump the whole particle system to DPMJET, where an intranuclear cascade will happen.
+    \item Before JETSET (the package responsible for parton fragmentation in PYTHIA) takes care of the final parton system in the last step, the parton energy loss effect in a cold nuclear medium will be performed to the hard scattering partons. 
+    \item As we already have the particles generated for the elementary interaction from PYTHIA, we will will utilize DPMJET to simulate the intranuclear cascade process based on the generated DIS process information.
     \item To close it up, the FLUKA generator~\cite{Ferrari:1995cq} which already connected with DPMJET will be used to produce deexcitation photons, nuclear fragments and some heavy remnants from the broken nucleus.
 \end{itemize}
 
@@ -119,6 +119,8 @@ DGLAP analysis of nuclear parton distribution function (PDF) and their uncertain
 EPS09. Process independent PDFs of free and bound nucleons
 have been discovered to be mutually different for well over twenty years. There
 exist various groups offering parameterizations of the nuclear modified PDFs~\cite{Hirai:2004wq,deFlorian:2003qf}.
+
+
 The nuclear modifications relative to the free nucleon PDFs are commonly named
 according to the different x-regions as follows: (a) shadowing; a suppression at
 $x\lesssim 0.1$, (b) antishadowing; excess around $0.1\lesssim x \lesssim 0.3$,
@@ -136,7 +138,14 @@ f^{A}_{i}(x, Q^{2}) \equiv R^{A}_{i}(x, Q^{2})f^{p}_{i}(x, Q^{2}),
 \end{equation} 
 where $R^{A}_{i}$ is the nuclear modification factor multiplied on top of the
 free proton PDF $f^{p}_{i}(x, Q^{2})$ for a parton of flavor $i$, 
-with $f^{p}_{i}(x, Q^{2})$ being the CTEQ6.1M PDF set. 
+with $f^{p}_{i}(x, Q^{2})$ being the CTEQ6.1M PDF set. Figure.~\ref{fig:shadowing} shows an illustration of the function $R^{A}_{i}$. 
+\begin{figure}
+\centering
+\includegraphics[width=1.0\textwidth]{plots/chpt5/shadowing.png} 
+\caption[The plot showing the ratio of gluon distribution function in the nuclear medium divided by the proton gluon distribution function] {
+An illustration of the function $R^{A}_{i}$. The plot is from \cite{Eskola:2009uj}.}
+\label{fig:shadowing}
+\end{figure}
 
 
 Assuming isospin symmetry for protons and neutrons, the up/down quark
@@ -144,7 +153,7 @@ distribution can be obtained by average according to the corresponding mass
 number $A$ and charge number $Z$.
 
 
-\subsection{Cold nuclear medium energy loss} \label{sec:energy_loss}
+\subsection{Parton energy loss in the cold nuclear medium } \label{sec:energy_loss}
 The fragmentation is another piece needs to be modified by the nuclear effect
 apart from that on the parton distribution function as in nuclear deep inelastic
 scattering process. Because of the non-perturbative nature of hadronization, it
@@ -193,9 +202,12 @@ written as:
 P(\Delta E)=\sum^{\infty}_{n=0}\frac{1}{n!}[\prod^{n}_{i=1}\int d\omega_{i}\frac{dI(\omega_{i})}{d\omega}]
 \times(\Delta E-\sum^{n}_{i=1}\omega_{i})\exp[-\int d\omega\frac{dI}{d\omega}],
 \end{equation}
-where $\omega_{i}$ is the emitted gluon energy and the gluon energy spectrum $\frac{dI}{d\omega}$
-depends on the parameters we defined above. The probability has a discrete part and
-a continuous part as follows:
+where $\omega_{i}$ is the emitted gluon energy and the gluon energy spectrum
+$\frac{dI}{d\omega}$ depends on the parameters we defined above. BDMPS formalism
+gives results for $R\rightarrow \infty$ while Salgado and Wiedemann extended the
+energy spectrum for moderate $R$ manifested by a suppression of small energy
+gluon emission. The probability has a discrete part and a continuous part as
+follows:
 \begin{equation}
 P(\Delta E) = p_{0}\delta(\Delta E) + p(\Delta E),
 \end{equation}
@@ -221,7 +233,7 @@ In our simulation, the generation of energy loss iterates as:
 \begin{figure}
 \centering
 \includegraphics[width=0.8\textwidth]{plots/chpt5/smearing framework.png}
-\caption[An illustration of the event smearing strategy in eic-smear package] {
+\caption[An illustration of the event smearing strategy in the eic-smear package] {
 A schematic view of the event smearing process implemented in eic-smear package. 
 }
 \label{fig:smear_layout}

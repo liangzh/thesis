@@ -142,7 +142,15 @@ which sums over partons with charge $e_{i}$. $f_{i}(x_{Bj})$ is the probability
 of finding a parton $i$ carrying a fraction $x_{Bj}$ of the proton's momentum.
 The $f_{i}(x_{Bj})$ is known as the parton distribution function (PDF). The PDF
 is assumed to be universal and can be used for different target particles with
-various combinations in a wide range of physics processes. 
+various combinations in a wide range of physics processes. A demonstration of the extracted PDF has been shown in Fig.~\ref{fig:PDF}.
+\begin{figure}
+\centering
+\includegraphics[width=0.6\textwidth]{plots/chpt2/PDF_H1andZEUS.png}
+\caption[The parton distributions in a proton extracted from the combined H1 and ZEUS data by the HERAPDF program] {
+The parton distribution functions for u, d valance quark, sea quark ($\bar{u}+\bar{d}$) and gluons as a function of $x_{Bj}$ (denoted by $x$ in this plot) at $Q^{2}=10 \ \mathrm{GeV}^{2}$ extracted from the combined H1 and ZEUS data. Note that gluon and sea quark distributions are scaled by a factor of 20. The plot is from the  ~\cite{Aaron:2009aa}.}
+\label{fig:PDF}
+\end{figure}
+
 
 Although the parton model is shown to be successful in describing a lot of
 experimental data especially in DIS collisions, a number of paradoxes remain.
@@ -194,7 +202,7 @@ coupling $\alpha_{s}$.
 
 \begin{figure}
 \centering
-\includegraphics[width=0.6\textwidth]{plots/chpt2/asq.eps}
+\includegraphics[width=0.7\textwidth]{plots/chpt2/asq.eps}
 \caption[Measurements of running coupling $\alpha_{s}$ versus $Q$] {
 Measurements of $\alpha_s$ versus $Q$. The plot is from the compilation of the Particle Data Group (PDG) ~\cite{Beringer:1900zz}.}
 \label{fig:alpha_s}
@@ -216,13 +224,13 @@ small at large $Q^{2}$.
 
 Formally, Eq.~\ref{eqn:alphas} predicts the divergence of coupling
 $\alpha_{s}(Q^{2})$ and the breakdown of perturbative QCD theory when $Q^{2}$
-approaches $\Lambda^{2}_{QCD}$. But this equation can not be trusted for
+approaches $\Lambda^{2}_{QCD}$. But this equation cannot be trusted for
 $Q\lesssim 1$ GeV, since it is derived from the perturbation theory. Although it
 is still debatable about fate of $\alpha_{s}$ for $Q\sim\Lambda_{QCD}$, various
 non-perturbative approaches suggest that QCD coupling should be relatively large
 (roughly at a value around one). As a consequence, the quarks and gluons should
 be confined in the colorless hadrons due to the growth of coupling at low scales
-and can not escape as free particles.
+and cannot escape as free particles.
 
 
 \subsection{Factorization}
@@ -361,7 +369,12 @@ The LO expression for splitting function is given by
 & P_{gg}(z)=6[\frac{1-z}{z}+\frac{z}{(1-z)_{+}}+z(1-z)]+[\frac{33-2N_{f}}{6}\delta(1-z)],
 \end{align}
 in which $[f(z)]_{+}=f(z)-\delta(1-z)\int^{1}_{0}f(t)dt$.
-The DGLAP equations give a rigorous formalism for calculating the changes of PDF
+The DGLAP equation is of the form
+\begin{equation}
+\frac{\partial f_{i}(x,Q^{2})}{\partial \ln Q^{2}} = \frac{\alpha_{s}(Q^{2})}{2\pi}\sum_{i}\int^{1}_{x}\frac{dx^{'}}{x^{'}}f_{i}(x^{'},Q^{2})P_{ji}(z),
+\end{equation}
+in which $z=\frac{x}{x^{'}}$.
+This equation gives a rigorous formalism for calculating the changes of PDF
 as $Q^{2}$ varies, the PDF shape and size at an initial scale $Q^{2}_{0}$ has to
 come either from non-perturbative methods or parameterization in $x$ with
 parameters determined by QCD fits to data.
@@ -390,12 +403,17 @@ has been developed. The BFKL equation is a linear evolution equation and it
 governs the evolution of the gluon distribution with respect to $x$ at fixed
 $Q^{2}$. The corresponding factorization formula is known as
 $k_{T}$-factorization, involving the unintegrated parton distribution function
-(uPDF). Then, the \ep\ cross section can be written as
+(uPDF) $\mathcal{F}(x,k^{2}_{\perp})$. Then, the \ep\ cross section can be written as
 \begin{equation}
-\sigma(ep\rightarrow eX')=\sum_{i} \int\frac{dx}{x}dk_{T}^{2}\mathcal{F}_{i}(x,k_{T})\hat{\sigma_{i}}.
+\sigma(ep\rightarrow eX')=\sum_{i} \int\frac{dx}{x}dk^{2}_{\perp}\mathcal{F}_{i}(x,k^{2}_{\perp})\hat{\sigma_{i}}.
 \end{equation}
+$\mathcal{F}(x,k^{2}_{\perp})$ follows the BFKL evolution equation:
+\begin{equation}
+\frac{\partial \mathcal{F}(x, k^{2}_{\perp})}{\partial \ln(1/x)}\approx \mathcal{K}\otimes \mathcal{F}(x, k^{2}_{\perp}),
+\end{equation}
+in which $\mathcal{K}$ is the splitting kernel equivalent to $P_{ji}$ in DGLAP evolution.
 Compared to Eq.~\ref{eqn:coll_factor}, the uPDF can be related to integrated PDF
-as \[f_{i}(x,Q^{2})\simeq \int^{Q^{2}}_{0}dk_{T}^{2}\mathcal{F}_{i}(x,k_{T}).\]
+as \[f_{i}(x,Q^{2})\simeq \int^{Q^{2}}_{0}dk^{2}_{\perp}\mathcal{F}_{i}(x,k^{2}_{\perp}).\]
 At the small $x$, the gluon density grows much faster than the quark density and
 is the major component for the proton wave function. Therefore, for the small
 $x$ considerations, we shall focus on the gluons alone. The solution of BFKL

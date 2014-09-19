@@ -145,7 +145,7 @@ follows:
 \begin{eqnarray}\label{eqn:xstrigCGC}
 \frac{d\sigma^{\gamma^{*}+A\rightarrow h_{1}+X}_{\textrm{SIDIS}}}{dz_{h1}d^{2}p_{h1\perp}} 
 = & C \int^{1}_{z_{h1}}dz_{q} \int
-d^{2}q_{\perp}F_{x_{g}}(q_{\perp})H_{\textrm{SIDIS}}(k_{\perp},q_{\perp},Q) \nonumber \\ 
+d^{2}q_{\perp} \int d^{2}p_{\perp} F_{x_{g}}(q_{\perp})H_{\textrm{SIDIS}}(k_{\perp},q_{\perp},Q) \nonumber \\ 
   & \times \sum_{q} e^{2}_{q}\frac{z_{q}}{z^{2}_{h1}}D_{q}(\frac{z_{h1}}{z_{q}},p_{\perp}),
 \end{eqnarray}
 where $H_{\textrm{SIDIS}}$ is the $q_{\perp}$ dependent hard factor for SIDIS,
@@ -157,8 +157,9 @@ F_{x_{g}}(q_{\perp})& = &\int \frac{d^{2}r}{2\pi^{2}}e^{iq_{\perp}\cdot
 r_{\perp}} \frac{1}{N_{c}} Tr\langle
 U(r_{\perp})U^{\dag}(0)\rangle_{\rho} \nonumber \\ 
 & \simeq &\frac{1}{\pi
-Q^{2}_{sA}}\exp[-\frac{q_{\perp}^{2}}{Q^{2}_{sA}}]. 
+Q^{2}_{sA}}\exp[-\frac{q_{\perp}^{2}}{Q^{2}_{sA}}], 
 \end{eqnarray}
+with $U$ being the light-like Wilson line in covariant gauge. 
 It has been suggested in Refs~\cite{Dominguez:2011gc, Dumitru:2011vk} that both
 dipole and WW gluon distributions have similar geometric scaling behavior.
 Therefore, one can parameterize these gluon distributions following the
@@ -645,7 +646,7 @@ All the other kinematics variables can be obtained based on these two and
 the knowledge of the beam energy. 
 
 When $Q^{2}$ is very large  (electroweak interaction happens), the scattered
-lepton can be a neutrino that can not be captured by our detector system. A
+lepton can be a neutrino that cannot be captured by our detector system. A
 different method, the Jacquet-Blondel (JB) method must be applied. This method
 reconstructs event kinematics from all the hadronic final state particles.
 \begin{align}

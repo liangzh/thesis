@@ -75,7 +75,7 @@ and hadronic photon events~\cite{Roesler:1998wy}. Meanwhile, we notice that
 since PHOJET, the code responsible for the elementary interaction generation in
 DPMJET, only describes the interaction involving photons at very low $Q^2$ ($Q^{2}\rightarrow 0$), which indicates 
 this DPMJET code allows mainly the simulation of
-photoproduction off nuclei. Clearly, for the study of saturation physics, we can not use a event generator
+photoproduction off nuclei. Clearly, for the study of saturation physics, we cannot use a event generator
 mainly developed to simulate photoproduction events. 
 
 Considering the fact that PHOJET responsible for treating elementary photon
@@ -104,7 +104,7 @@ generated as follows:
 
 \begin{figure}
 \centering
-\includegraphics[width=1.0\textwidth]{plots/chpt5/eA_hybrid_chart.png} 
+\includegraphics[width=0.9\textwidth]{plots/chpt5/eA_hybrid_layout.png} 
 \caption[An illustration of the hybrid \eA\ Monte Carlo generator design layout] {
 An illustration of the hybrid \eA\ Monte Carlo generator design layout. }
 \label{fig:MC_hybrid_chart}
@@ -142,7 +142,7 @@ with $f^{p}_{i}(x, Q^{2})$ being the CTEQ6.1M PDF set. Figure.~\ref{fig:shadowin
 \begin{figure}
 \centering
 \includegraphics[width=1.0\textwidth]{plots/chpt5/shadowing.png} 
-\caption[The plot showing the ratio of gluon distribution function in the nuclear medium divided by the proton gluon distribution function] {
+\caption[The plot showing the ratio of parton distribution function in the nuclear medium divided by the proton gluon distribution function] {
 An illustration of the function $R^{A}_{i}$. The plot is from \cite{Eskola:2009uj}.}
 \label{fig:shadowing}
 \end{figure}
@@ -203,10 +203,10 @@ P(\Delta E)=\sum^{\infty}_{n=0}\frac{1}{n!}[\prod^{n}_{i=1}\int d\omega_{i}\frac
 \times(\Delta E-\sum^{n}_{i=1}\omega_{i})\exp[-\int d\omega\frac{dI}{d\omega}],
 \end{equation}
 where $\omega_{i}$ is the emitted gluon energy and the gluon energy spectrum
-$\frac{dI}{d\omega}$ depends on the parameters we defined above. BDMPS formalism
-gives results for $R\rightarrow \infty$ while Salgado and Wiedemann extended the
-energy spectrum for moderate $R$ manifested by a suppression of small energy
-gluon emission. The probability has a discrete part and a continuous part as
+$\frac{dI}{d\omega}$ depends on the length of the medium $L$ and the transport coefficient $\hat{q}$ we defined above. BDMPS formalism
+gives results of $\frac{dI}{d\omega}$ for $R\rightarrow \infty$ while Salgado and Wiedemann extended the
+energy spectrum for moderate $R$. In the extended BDMPS formalism, a suppression of small energy
+gluon emission is expected at intermediate $R$. The probability has a discrete part and a continuous part as
 follows:
 \begin{equation}
 P(\Delta E) = p_{0}\delta(\Delta E) + p(\Delta E),

@@ -194,9 +194,9 @@
 \DeclareOption{nohyphenatetitles}{\setboolean{hyphenatetitles}{false}}
 \DeclareOption{hyphenatetitles}{\setboolean{hyphenatetitles}{true}}
 
-% The \ProcessOptions command does the options.
 
 \ProcessOptions
+
 
 % The "uclath12.sty" file defines things that depend on the type size.
 % In order to meet the UCLA requirements for minimum size of print in a

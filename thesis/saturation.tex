@@ -50,13 +50,13 @@ For a large nucleus, the incoming projectile sees the gluons from different nucl
 %parameter. Similar to a random walk process, after $A^{1/3}$ kicks the typical
 %transverse momentum generation from a nucleus (or the saturation scale for a
 %nucleus target) 
-The saturation scale for a nucleus target becomes larger than the proton saturation scale as
+The saturation scale for a nucleus target becomes larger than that for a proton varying as
 $Q_{sA}^{2}\approx A^{1/3}Q^{2}_{sp}$. This enhancement factor $A^{1/3}$ due to
 the existence of the nuclear environment is often referred to as the nuclear
 ``oomph" factor.
 
 For $Q^{2}>Q_{s}^{2}$, the target hadron and nucleus is usually treated as a dilute system,
-whereas $Q^{2}<Q_{s}^{2}$ corresponds to the case with a highly dense saturated
+whereas $Q^{2}<Q_{s}^{2}$ corresponds to the case with a highly saturated
 hadron with a large parton density. Therefore, as seen in
 Fig.~\ref{fig:Q2vX_map}, one can define a boundary with $Q^2=Q_s^2(x)$ in the
 $x\textrm{-}Q^2$ plane to describe the transition from the non-linear saturation
@@ -214,8 +214,8 @@ R_{L}(x_{Bj},Q^{2})=\frac{F^{A}_{L}(x_{Bj},Q^{2})}{AF^{p}_{L}(x_{Bj},Q^{2})}.
 In the absence of any nuclear effects, $R_L$ should be unity. 
 
 In Fig.~\ref{fig:F_L}, two calculations for $F_L$ are presented. The blue one is
-based on the CGC framework~\cite{Albacete:2009fh}, while the gray band uses the
-NLO DGLAP evolution based EPS09 nuclear PDF. For heavy ions $R_L$ shows a
+obtained within the CGC framework~\cite{Albacete:2009fh}, while the gray band uses the
+NLO DGLAP evolution based on the EPS09 nuclear PDF. For heavy ions $R_L$ shows a
 significant suppression due to the existence of the nuclear environment,
 while this ratio becomes unity at $A\sim 1$. 
 \begin{figure}
@@ -235,12 +235,24 @@ in distinguishing different approaches.
 
 
 \subsection{Diffractive scattering}
+\begin{figure}
+\centering
+\includegraphics[width=0.8\textwidth]{plots/chpt3/diff_Mx2_Q25_x1e-3.pdf}
+\caption[Ratio of diffractive cross section out of the total cross section from saturation model and shadowing model]{
+The upper plot shows the comparison of the differential diffractive cross section from the saturation model and the leading-twist shadowing model while the lower part shows the ratio of the diffractive cross section divided by the total cross section from these two models. 
+\eAu\ results are marked by the dashed lines while solid line is for \ep\ . Saturation model and shadowing model predictions
+are plotted in red and blue color respectively. Plots are made with respect to the invariant mass of the diffractive final state. Corresponding $\beta$ ( struck quark momentum fraction out of the colorless diffractive exchange) value has been labeled against to each $M_{X}^{2}$.
+This plot is from Ref.~\cite{Aschenauer:2014a}.}
+\label{fig:diff_eA}
+\end{figure}
+
 Diffractive interactions happen when the electron probe is coupled to a proton
 or nucleus through the exchange of partons without net color. This exchange is
 usually named as the ``Pomeron", reckoned to be a colorless combination of two
 gluons. These diffractive interactions are well described by Regge
 theory~\cite{Irving:1977ea}. The hard scale of this interaction is also given by
 the photon virtuality $Q^{2}$.
+
 
 The HERA data shows that about 15\% of the total DIS cross section is
 contributed by diffractive process. One significant feature of the diffractive
@@ -261,27 +273,9 @@ of the diffractive final state. It is expected to see a significant difference
 in the ratio of diffractive events out of total between these two models. The
 diffractive process is supposed to be above unity in the saturation model while it
 is a bit suppressed in the shadowing model.
-\begin{figure}
-\centering
-\includegraphics[width=0.8\textwidth]{plots/chpt3/diff_Mx2_Q25_x1e-3.pdf}
-\caption[Ratio of diffractive cross section out of the total cross section from saturation model and shadowing model]{
-The upper plot shows the comparison of the differential diffractive cross section from the saturation model and the leading-twist shadowing model while the lower part shows the ratio of the diffractive cross section divided by the total cross section from these two models. 
-\eAu\ results are marked by the dashed lines while solid line is for \ep\ . Saturation model and shadowing model predictions
-are plotted in red and blue color respectively. Plots are made with respect to the invariant mass of the diffractive final state. Corresponding $\beta$ ( struck quark momentum fraction out of the colorless diffractive exchange) value has been labeled against to each $M_{X}^{2}$.
-This plot is from Ref.~\cite{Aschenauer:2014a}.}
-\label{fig:diff_eA}
-\end{figure}
+
 
 \subsection{Dihadron correlations}  \label{subsec:dihadron_preintro}
-
-\begin{figure}
-\centering
-\includegraphics[width=0.4\textwidth]{plots/chpt3/dihadron_beam_view.png}
-\caption[A schematic view of the trigger/associate particles in the correlated hadron pairs in the plane perpendicular to the beam direction]{
-A schematic view of the trigger/associate particles in the correlated hadron pairs in the plane perpendicular to the beam direction.
-This plot is from Ref.~\cite{Accardi:2012qut}.}
-\label{fig:dihadron_beamView}
-\end{figure}
 
 Azimuthal dihadron correlations are considered to be a very compelling
 measurement to tell whether the partonic system under study has reached the
@@ -294,6 +288,14 @@ is expected to be dominated by back-to-back jets produced in the hard
 $2\rightarrow2$ scattering. The pair of trigger and associate particle is selected as shown in Fig.~\ref{fig:dihadron_beamView}. 
 
 
+\begin{figure}
+\centering
+\includegraphics[width=0.4\textwidth]{plots/chpt3/dihadron_beam_view.png}
+\caption[A schematic view of the trigger/associate particles in the correlated hadron pairs in the plane perpendicular to the beam direction]{
+A schematic view of the trigger/associate particles in the correlated hadron pairs in the plane perpendicular to the beam direction.
+This plot is from Ref.~\cite{Accardi:2012qut}.}
+\label{fig:dihadron_beamView}
+\end{figure}
 
 At sufficiently high parton densities, when
 saturation effects dominate, incoming gluons normally carry a typical transverse
@@ -305,7 +307,7 @@ peak in the $\Delta\phi$ distribution.
 The observed suppressions in dihadron correlation measurements at forward
 rapidities performed in \dA\ $\sqrt{s}=200$ GeV collisions at
 RHIC~\cite{Adare:2011sc,Braidot:2010ig,Li:2012bn} are perhaps the most
-suggestive evidence of the onset of the saturation regime in present data, shown
+suggestive evidence for the onset of the saturation regime in present data, shown
 in Fig.~\ref{fig:dihadron_dAu}. Rather significant suppression of the away-side
 correlation is observed, when one compares the data for central \dA\ collisions
 to peripheral \dA\ collisions at forward rapidities. The qualitative feature of

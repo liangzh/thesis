@@ -14,7 +14,7 @@ GEANT~\cite{Brun:1978fy}. In our case, we use a simplified fast smearing method~
 In addition, we want to make some phenomenological predictions which are very
 hard to be calculated with perturbative theory and can only be studied based on
 some Monte Carlo models. In the end, with the event by event level description
-of Monte Carlo generators we can estimate the statistical error, based on which
+of Monte Carlo generators we can estimate the statistical uncertainties, based on which
 one can decide how much time it takes to make a conclusive measurement.
 
 This chapter describes the Monte Carlo event generators we employed to simulate
@@ -47,7 +47,7 @@ is an approximation to the higher-oder QCD process at the leading-log level.
 \item Hadronization and decay process. The generated final-state partons and
 beam remnants will fragment into colorless hadrons, which is a non-perturbative process
 and determined from the string model~\cite{Andersson:1983ia} in PYTHIA implementation. Unstable particles decay
-until reaching a set of stable final-state hadrons.
+until reaching a set of stable final-state particles.
 \end{itemize}
 
 The simulation part of this study is based on the PYTHIA-$6.4$ Monte Carlo program,
@@ -75,13 +75,12 @@ and hadronic photon events~\cite{Roesler:1998wy}. Meanwhile, we notice that
 since PHOJET, the code responsible for the elementary interaction generation in
 DPMJET, only describes the interaction involving photons at very low $Q^2$ ($Q^{2}\rightarrow 0$), which indicates 
 this DPMJET code allows mainly the simulation of
-photoproduction off nuclei. Clearly, for the study of saturation physics, we cannot use a event generator
-mainly developed to simulate photoproduction events. 
+photoproduction off nuclei.
 
 Considering the fact that PHOJET responsible for treating elementary photon
 nucleon interaction is quite a standalone part in the whole DPMJET framework, it
 occurs to us that if we can switch the part treating photon nucleon interaction
-from PHOJET to some more multi-purposed package like
+from PHOJET to a multi-purposed package like
 PYTHIA~\cite{Sjostrand:2006za}, we can largely enforce the ability and broaden
 the applicable scope of DPMJET, for example to simulate the kinematics region
 covered by a proposed EIC.
@@ -97,8 +96,8 @@ generated as follows:
 \begin{itemize}
     \item To begin with, a nucleon is sampled from the whole nucleus according to the nuclear geometry implemented in DPMJET.
     \item The elementary interaction of the incoming electron and the selected nucleon will be simulated according to the modules as described in PYTHIA (see Sec.~\ref{sec:MC_ep}).
-    \item Before JETSET (the package responsible for parton fragmentation in PYTHIA) takes care of the final parton system in the last step, the parton energy loss effect in a cold nuclear medium will be performed to the hard scattering partons. 
-    \item As we already have the particles generated for the elementary interaction from PYTHIA, we will will utilize DPMJET to simulate the intranuclear cascade process based on the generated DIS process information.
+    \item Before JETSET (the package responsible for parton fragmentation in PYTHIA) takes care of the final parton system in the last step, the parton energy loss effect in a cold nuclear medium will be assigned to the hard scattering partons. 
+    \item As we already have the particles generated for the elementary interaction from PYTHIA, we will utilize DPMJET to simulate the intranuclear cascade process based on the generated DIS process information.
     \item To close it up, the FLUKA generator~\cite{Ferrari:1995cq} which already connected with DPMJET will be used to produce deexcitation photons, nuclear fragments and some heavy remnants from the broken nucleus.
 \end{itemize}
 
@@ -123,7 +122,7 @@ exist various groups offering parameterizations of the nuclear modified PDFs~\ci
 
 The nuclear modifications relative to the free nucleon PDFs are commonly named
 according to the different x-regions as follows: (a) shadowing; a suppression at
-$x\lesssim 0.1$, (b) antishadowing; excess around $0.1\lesssim x \lesssim 0.3$,
+$x\less 0.1$, (b) antishadowing; excess around $0.1\lesssim x \lesssim 0.3$,
 (c) EMC effect; depletion between $x\simeq 0.3$ and $x \simeq 0.7$, (d) Fermi
 motion; an excess towards $x=1$. While the quark antiquark densities are
 relatively well constrained, the modifications to gluon distributions are not
@@ -141,7 +140,7 @@ free proton PDF $f^{p}_{i}(x, Q^{2})$ for a parton of flavor $i$,
 with $f^{p}_{i}(x, Q^{2})$ being the CTEQ6.1M PDF set. Figure.~\ref{fig:shadowing} shows an illustration of the function $R^{A}_{i}$. 
 \begin{figure}
 \centering
-\includegraphics[width=1.0\textwidth]{plots/chpt5/shadowing.png} 
+\includegraphics[width=0.8\textwidth]{plots/chpt5/shadowing.png} 
 \caption[The plot showing the ratio of parton distribution function in the nuclear medium divided by the proton gluon distribution function] {
 An illustration of the function $R^{A}_{i}$. The plot is from \cite{Eskola:2009uj}.}
 \label{fig:shadowing}
@@ -241,7 +240,7 @@ A schematic view of the event smearing process implemented in eic-smear package.
 
 
 When a detector system tracks a particle, the information of this particle
-(momentum, energy, particle id, and so on) has to be reconstructed from the electronic
+(momentum, energy and so on) has to be reconstructed from the electronic
 signals received and analyzed at the detector read out. How well the particle
 information can be reconstructed or manifested at the detector read out is
 estimated by the detector resolution. The detector with a better resolution

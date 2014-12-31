@@ -11,8 +11,10 @@
 %abs_ch,abs_en,introduction,facilities,analysis,results,discussion}
 %discussion}
 
-\include{setup/newcommand}
 \include{setup/packages}
+
+\include{setup/newcommand}
+
 \include{setup/pageStyleSetup}
 
 
@@ -30,6 +32,7 @@
 \pagenumbering{gobble}
 \include{title_ch}
 \include{title_en}
+%\include{declare}
 
 %\pagenumbering{}
 \pagenumbering{roman}
@@ -37,6 +40,8 @@
 \include{abs_ch}
 \include{abs_en}
 
+%no page number for the table of contents
+\pagenumbering{gobble}
 
 \tableofcontents
 \listoffigures
@@ -70,9 +75,9 @@
 \clearpage
 %
 %\addcontentsline{toc}{chapter}{Presentations and publication List}
-%\include{publications}
+\include{publications}
 %\addcontentsline{toc}{chapter}{Acknowledges}
-%\include{acknowledge}
+\include{acknowledge}
 
 \end{CJK*}
 
